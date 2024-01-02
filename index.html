@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scroll SVG Demo</title>
+  <!-- Add scroll-svg library -->
+  <script src="https://cdn.jsdelivr.net/npm/scroll-svg/dist/scroll-svg.min.js"></script>
+  <style>
+    /* Add any necessary CSS styles */
+    body {
+      margin: 0;
+      height: 2000px; /* To create a scrollable height for demonstration */
+    }
+  </style>
+</head>
+<body>
+  <svg id="my-svg" width="100" height="100" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="40" fill="blue" opacity="0"/>
+  </svg>
+
+  <!-- Initialize scroll-svg -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const svgElement = document.getElementById('my-svg');
+      ScrollSVG.init(svgElement, {
+        // Specify your animation properties here
+        duration: 1000, // Duration of the animation in milliseconds
+        from: '0%', // Start the animation when the element is at 0% of the viewport
+        to: '100%', // End the animation when the element is at 100% of the viewport
+        ease: 'linear', // Easing function
+        draw: 'from', // Animation direction ('from' or 'to')
+        stagger: 0, // Stagger timing for multi-element SVGs
+        opacity: 1, // Final opacity of the animated SVG element
+      });
+    });
+  </script>
+</body>
+</html>
