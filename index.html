@@ -1,38 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Scroll SVG Demo</title>
-  <!-- Add scroll-svg library -->
-  <script src="https://cdn.jsdelivr.net/npm/scroll-svg/dist/scroll-svg.min.js"></script>
-  <style>
-    /* Add any necessary CSS styles */
-    body {
-      margin: 0;
-      height: 2000px; /* To create a scrollable height for demonstration */
-    }
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
   </style>
 </head>
 <body>
-  <svg id="my-svg" width="100" height="100" viewBox="0 0 100 100">
-    <circle cx="50" cy="50" r="40" fill="blue" opacity="0"/>
-  </svg>
-
-  <!-- Initialize scroll-svg -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const svgElement = document.getElementById('my-svg');
-      ScrollSVG.init(svgElement, {
-        // Specify your animation properties here
-        duration: 1000, // Duration of the animation in milliseconds
-        from: '0%', // Start the animation when the element is at 0% of the viewport
-        to: '100%', // End the animation when the element is at 100% of the viewport
-        ease: 'linear', // Easing function
-        draw: 'from', // Animation direction ('from' or 'to')
-        stagger: 0, // Stagger timing for multi-element SVGs
-        opacity: 1, // Final opacity of the animated SVG element
-      });
-    });
-  </script>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Scroll SVG Demo&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Add scroll-svg library --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="https://cdn.jsdelivr.net/npm/scroll-svg/dist/scroll-svg.min.js"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Add any necessary CSS styles */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 2000px; /* To create a scrollable height for demonstration */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;svg id="my-svg" width="100" height="100" viewBox="0 0 100 100"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;circle cx="50" cy="50" r="40" fill="blue" opacity="0"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/svg&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Initialize scroll-svg --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.addEventListener("DOMContentLoaded", function () {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const svgElement = document.getElementById('my-svg');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>ScrollSVG.init(svgElement, {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Specify your animation properties here</p>
+<p class="p1"><span class="Apple-converted-space">        </span>duration: 1000, // Duration of the animation in milliseconds</p>
+<p class="p1"><span class="Apple-converted-space">        </span>from: '0%', // Start the animation when the element is at 0% of the viewport</p>
+<p class="p1"><span class="Apple-converted-space">        </span>to: '100%', // End the animation when the element is at 100% of the viewport</p>
+<p class="p1"><span class="Apple-converted-space">        </span>ease: 'linear', // Easing function</p>
+<p class="p1"><span class="Apple-converted-space">        </span>draw: 'from', // Animation direction ('from' or 'to')</p>
+<p class="p1"><span class="Apple-converted-space">        </span>stagger: 0, // Stagger timing for multi-element SVGs</p>
+<p class="p1"><span class="Apple-converted-space">        </span>opacity: 1, // Final opacity of the animated SVG element</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
 </body>
 </html>
