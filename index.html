@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    /* Define a CSS class for the spacer */
+    .spacer {
+      height: 100vh; /* Set the height to be equal to the viewport height */
+    }
+  </style>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -84,15 +90,100 @@
     </svg>
   </div>
     
-  <section class="one">
+  <section class="frontpage">
     <h1 class="scroll" data-rate=".4" data-direction="vertical">Dynamics of Neural Systems Lab</h1>
+    <p class="frontpage-text">
+      dynamical systems – geometry – machine learning – networks – computational neuroscience
+    </p>
   </section>
+
+  <!-- Vertical space for animation to complete -->
+  <div class="spacer"></div>
+
+  <!-- Mission section -->
+  <section class="mission">
+    <h2 class="mission-title scroll" data-rate=".4" data-direction="vertical">Our Mission</h2>
+    <p class="mission-text">
+      Both our brains and AI systems solve computational challenges in a highly distributed manner encoded in the collective activity of neural populations. 
+      Our research focuses on understanding the dynamical processes underpinning neural computations to derive common algorithmic principles shared by these fundamentally different systems. 
+      <br><br>We are motivated by two synergistic aims: 
+    </p>
+    <ol class="mission-text">
+      <li>
+        Developing novel methods using machine learning, geometry and dynamical systems theory that facilitate discovering better models of how the brain works, 
+      </li>
+      <li>
+        Reverse-engineering the dynamical processes that underpin complex animal behaviours to develop more advanced AI systems that benefit clinical applications such as brain-machine interfaces.
+      </li>
+    </ol>
+  </section>
+
+  <!-- Team section -->
+  <section class="team">
+    <h2 class="team-title scroll" data-rate=".4" data-direction="vertical">Team</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="adam.jpg" alt="Team Member 1">
+        <p class="member-name">Adam Gosztolai</p>
+        <p class="member-description">Principal investigator</p>
+      </div>
+      <!-- Repeat the above structure for each team member -->
+      <div class="team-member">
+        <img src="path_to_image" alt="Team Member 2">
+        <p class="member-description">PhD student</p>
+      </div>
+      <!-- Add more team members as needed -->
+      <div class="team-member">
+        <img src="path_to_image" alt="Team Member 3">
+        <p class="member-description">Master's student</p>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- Publications section -->
+  <section class="publications">
+    <h2 class="publications-title">Selected Publications</h2>
+    
+    <div class="publication-item">
+      <img class="publication-thumbnail" src="thumbnail1.jpg" alt="Publication Thumbnail">
+      <div class="publication-details">
+        <h3 class="publication-subtitle">Publication Title 1</h3>
+        <p class="publication-description">
+          Description of the publication goes here. You can provide a brief summary or abstract of the publication.
+        </p>
+      </div>
+    </div>
+  
+    <div class="publication-item">
+      <img class="publication-thumbnail" src="thumbnail2.jpg" alt="Publication Thumbnail">
+      <div class="publication-details">
+        <h3 class="publication-subtitle">Publication Title 2</h3>
+        <p class="publication-description">
+          Description of the second publication goes here. It should provide an overview or key points of the publication.
+        </p>
+      </div>
+    </div>
+    <!-- Add more publication items as needed -->
+  </section>
+
+   <!--<!<section class="mission">
+    <h2 class="mission-title scroll" data-rate=".4" data-direction="vertical">Alumni</h2>
+    <p class="mission-text">
+      Joe Bloe
+    </p>
+  </section>-->
+  
 
   <script>
 
     document.addEventListener("DOMContentLoaded", function() {
       let paths = document.querySelectorAll('.lines path');
       let polygonsGroup = document.querySelector('.polygons');
+      let svgContainer = document.querySelector('.line-container');
+      let completedAnimation = false;
+      let targetScroll = window.innerHeight;
+
       polygonsGroup.style.opacity = '0';
 
       paths.forEach((path) => {
@@ -101,22 +192,41 @@
         path.style.strokeDashoffset = pathLength;
       });
 
-      window.addEventListener('scroll', () => {
-        let scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+      function handleScroll() {
+        let scrollPos = window.scrollY;
 
-        paths.forEach((path) => {
-          let pathLength = path.getTotalLength();
-          let drawLength = pathLength * scrollPercentage;
-          path.style.strokeDashoffset = pathLength - drawLength;
-        });
-
-        if (scrollPercentage >= 0.99) {
+        if (!completedAnimation && scrollPos >= targetScroll) {
           polygonsGroup.style.opacity = '1';
+          completedAnimation = true;
+        } else if (completedAnimation && scrollPos < targetScroll) {
+          completedAnimation = false;
+        }
+
+        if (completedAnimation) {
+          let scrollBeyondViewport = scrollPos - targetScroll;
+          if (scrollBeyondViewport > 0) {
+            svgContainer.style.transform = `translateY(-${scrollBeyondViewport}px)`;
+          } else {
+            svgContainer.style.transform = 'translateY(0)';
+          }
         } else {
+          let animationProgress = scrollPos / targetScroll;
+          paths.forEach((path) => {
+            let pathLength = path.getTotalLength();
+            let drawLength = pathLength * animationProgress;
+            path.style.strokeDashoffset = pathLength - drawLength;
+          });
+          svgContainer.style.transform = 'translateY(0)';
           polygonsGroup.style.opacity = '0';
         }
-      });
+      }
+
+      window.addEventListener('scroll', handleScroll);
     });
+          
+
+
+
 
   </script>
 
