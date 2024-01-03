@@ -119,23 +119,23 @@ section {
     margin-bottom: 20px;
 }
   
-  .publication-thumbnail {
+.publication-thumbnail {
     width: 200px; /* Set the width of the thumbnail image */
     height: auto;
     margin-right: 20px;
-  }
+}
   
-  .publication-details {
+.publication-details {
     flex: 1;
-  }
+}
   
-  .publication-subtitle {
+.publication-subtitle {
     font-size: 20px;
     margin-bottom: 10px;
-  }
+}
   
-  .publication-description {
+.publication-description {
     font-size: 16px;
     line-height: 1.5;
     /* Add any additional styles for the publication description */
-  }
+}
