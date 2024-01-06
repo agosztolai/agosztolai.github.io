@@ -9,6 +9,11 @@
     .spacer {
       height: 100vh; /* Set the height to be equal to the viewport height */
     }
+    @media screen and (max-device-width: 480px){
+      body{
+      -webkit-text-size-adjust: 100%;
+      }
+    }
   </style>
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -95,7 +100,7 @@
       Dynamics of Neural Systems Lab
     </h1>
     <p class="frontpage-text" data-rate=".4" data-direction="vertical">
-      dynamical systems - geometry - machine learning - networks - computational neuroscience
+      dynamical systems - geometry - machine learning - computational neuroscience
     </p>
   </section>
 
@@ -125,7 +130,7 @@
     <h2 class="team-title scroll" data-rate=".4" data-direction="vertical">Team</h2>
     <div class="team-grid">
       <div class="team-member">
-        <img src="adam.jpg" alt="Team Member 1">
+        <img src="team/adam.jpg" alt="Team Member 1">
         <p class="member-name">Adam Gosztolai</p>
         <p class="member-description">Principal investigator</p>
       </div>
@@ -148,7 +153,7 @@
     <h2 class="publications-title">Selected Publications</h2>
     
     <div class="publication-item">
-      <img class="publication-thumbnail" src="MARBLE.jpg" alt="Publication Thumbnail">
+      <img class="publication-thumbnail" src="publications/MARBLE.jpg" alt="Publication Thumbnail">
       <div class="publication-details">
         <h3 class="publication-subtitle">Interpretable representation of neural dynamics using unsupervised geometric deep learning</h3>
         <p class="publication-description">
@@ -167,7 +172,7 @@
     </div>
   
     <div class="publication-item">
-      <img class="publication-thumbnail" src="LiftPose3D.jpg" alt="Publication Thumbnail">
+      <img class="publication-thumbnail" src="publications/LiftPose3D.jpg" alt="Publication Thumbnail">
       <div class="publication-details">
         <h3 class="publication-subtitle">Estimating three-dimensional animal poses using a single camera</h3>
         <p class="publication-description">
@@ -184,7 +189,7 @@
     </div>
 
     <div class="publication-item">
-      <img class="publication-thumbnail" src="OR_curvature.jpg" alt="Publication Thumbnail">
+      <img class="publication-thumbnail" src="publications/OR_curvature.jpg" alt="Publication Thumbnail">
       <div class="publication-details">
         <h3 class="publication-subtitle">Geometric connection between the dynamics over networks and connectivity</h3>
         <p class="publication-description">
