@@ -73,20 +73,6 @@ section {
     text-align: left;
     line-height: 1.6;
     color: #000;
-
-    /* For iOS Safari */
-    @media screen and (-webkit-min-device-pixel-ratio: 0) {
-        .mission-text {
-            margin-top: 200px; /* Adjust the margin for iOS Safari */
-        }
-    }
-
-    /* For other devices (including desktop browsers) */
-    @media not all and (pointer: coarse) {
-        .mission-text {
-            margin-top: -100px; /* Your original margin value for other devices */
-        }
-    }
 }
 
 .team {
