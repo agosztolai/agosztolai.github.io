@@ -1,5 +1,8 @@
 <!-- Importing Scripts -->
 
+<!-- Fontawesome -->
+<script src="https://kit.fontawesome.com/590872f71d.js" crossorigin="anonymous"></script>
+
 <!-- jQuery CDN -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 
@@ -18,3 +21,54 @@
 
 <!-- Main JS -->
 <script src="{{ site.baseurl }}/js/main.js" charset="utf-8"></script>
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", function() {
+      let paths = document.querySelectorAll('.lines path');
+      let polygonsGroup = document.querySelector('.polygons');
+      let svgContainer = document.querySelector('.line-container');
+      let completedAnimation = false;
+      let targetScroll = window.innerHeight;
+
+      polygonsGroup.style.opacity = '0';
+
+      paths.forEach((path) => {
+        let pathLength = path.getTotalLength();
+        path.style.strokeDasharray = pathLength + ' ' + pathLength;
+        path.style.strokeDashoffset = pathLength;
+      });
+
+      function handleScroll() {
+        let scrollPos = window.scrollY;
+
+        if (!completedAnimation && scrollPos >= targetScroll) {
+          polygonsGroup.style.opacity = '1';
+          completedAnimation = true;
+        } else if (completedAnimation && scrollPos < targetScroll) {
+          completedAnimation = false;
+        }
+
+        if (completedAnimation) {
+          let scrollBeyondViewport = scrollPos - targetScroll;
+          if (scrollBeyondViewport > 0) {
+            svgContainer.style.transform = `translateY(-${scrollBeyondViewport}px)`;
+          } else {
+            svgContainer.style.transform = 'translateY(0)';
+          }
+        } else {
+          let animationProgress = scrollPos / targetScroll;
+          paths.forEach((path) => {
+            let pathLength = path.getTotalLength();
+            let drawLength = pathLength * animationProgress;
+            path.style.strokeDashoffset = pathLength - drawLength;
+          });
+          svgContainer.style.transform = 'translateY(0)';
+          polygonsGroup.style.opacity = '0';
+        }
+      }
+
+      window.addEventListener('scroll', handleScroll);
+    });
+
+  </script>

@@ -1,0 +1,67 @@
+<!-- Blog Section -->
+<section class="site-section blog-section" id="research">
+  <div class="container">
+
+    <!-- Section Heading -->
+    <div class="row text-center">
+
+      <!-- Section Header -->
+      <header class="col-md-8 col-md-push-2 col-sm-12 section-header">
+        <h2>Selected Research</h2>
+        <hr class="normal">
+      </header>
+
+      <!-- Section Content -->
+      <div class="col-md-8 col-md-push-2 col-sm-12 section-content">
+        <p>{{ site.blog-description }}</p>
+      </div>
+
+    </div>
+
+    <!-- Blog Articles Container -->
+    <div class="row blog-articles-container">
+
+      <!-- Jekyll LOOP -->
+      {% for post in site.research limit:3 %}
+
+        <!-- Blog Article -->
+        <div class="col-md-4 col-md-push-0 col-sm-10 col-sm-push-1 col-xs-10 col-xs-push-1">
+          <article class="blog-article clearfix">
+
+            <!-- Article Header -->
+            <header class="article-header">
+              <div class="img-wrap">
+                <img src="images/research/{{ post.image }}" alt="Article Blog Image">
+              </div>
+              <div class="article-title">
+                <h4 class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+                <h5 class="category">{{ post.journal }}, {{ post.year }}</h5>
+              </div>
+            </header>
+
+            <!-- Article Content -->
+            <div class="article-content">
+              <div class="article-text">
+                <p>{{ post.excerpt | strip_html }}</p>
+              </div>
+              <div class="show-more">
+                <a href="{{ site.baseurl }}{{ post.url }}" class="button">Read More</a>
+              </div>
+            </div>
+
+          </article>
+        </div>
+
+      {% endfor %}
+      <!-- /LOOP-->
+
+    </div>
+
+    <!-- View All Posts CTA -->
+    <div class="row view-posts text-center">
+      <hr class="normal">
+      <a href="research.html" class="button-cta button-focus col-md-3 col-sm-5 col-xs-8">View all research</a>
+    </div>
+
+  </div>
+</section>

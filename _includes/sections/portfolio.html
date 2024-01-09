@@ -40,16 +40,15 @@
       {% for item in site.portfolio %}
 
       <div class="col-md-4 col-sm-6 item visible {% for category in item.categories %} {{ category | replace:' ','-' | downcase }}{% endfor %}">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.journal }}</p>
         <figure class="img-wrap">
           <img src="{{ site.baseurl }}/images/portfolio/{{ item.image }}" alt="Portfolio Item Image" />
         </figure>
         <div class="item-content">
-          <h3>{{ item.title }}</h3>
-          <h4>{{ item.categories | first }}</h4>
           <div class="links">
             <ul>
               <li><a href="{{ item.url }}" class="item-link"><i class="pe-7s-link"></i></a></li>
-              <li><a href="#" class="item-like"><i class="pe-7s-like"></i></a></li>
               <li><a href="{{ site.baseurl }}/images/portfolio/{{ item.image }}" class="item-expand"><i class="pe-7s-exapnd2"></i></a></li>
             </ul>
           </div>
@@ -61,6 +60,12 @@
       <!-- Overlay Lightbox -->
       <div id="overlay" class="overlay"></div>
 
+    </div>
+
+    <!-- View All Posts CTA -->
+    <div class="row view-posts text-center">
+      <hr class="normal">
+      <a href="portfolio.html" class="button-cta button-focus">All publications</a>
     </div>
 
   </div>
