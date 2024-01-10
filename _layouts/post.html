@@ -10,7 +10,7 @@ layout: page
     <header class="article-header">
       <div class="article-title">
         <h2 >{{ page.title }}</h2>
-        <h4 >{{ page.authors}}, {{ page.journal}}, ({{ page.year}})</h4>
+        <h4 >{% if page.authors != null %}{{ page.authors}},{% endif %} {% if page.journal != null %}{{ page.journal}},{% endif %} {% if page.year != null %}({{ page.year}}){% endif %}</h4>
       </div>
     </header>
 

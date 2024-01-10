@@ -21,37 +21,43 @@
     <!-- Blog Articles Container -->
     <div class="row blog-articles-container">
 
+      {% assign counter = 0 %}
+
       <!-- Jekyll LOOP -->
-      {% for post in site.posts limit:3 %}
+      {% for post in site.posts %}
+        {% if counter < 3 %}
+        {% if post.categories contains "research" %}
+        {% assign counter = counter | plus: 1 %}
 
-        <!-- Blog Article -->
-        <div class="col-md-4 col-md-push-0 col-sm-10 col-sm-push-1 col-xs-10 col-xs-push-1 ">
-          <article class="blog-article clearfix">
+          <!-- Blog Article -->
+          <div class="col-md-4 col-md-push-0 col-sm-10 col-sm-push-1 col-xs-10 col-xs-push-1 ">
+            <article class="blog-article clearfix">
 
-            <!-- Article Header -->
-            <header class="article-header">
-              <div class="img-wrap">
-                <img src="images/research/{{ post.image }}" >
+              <!-- Article Header -->
+              <header class="article-header">
+                <div class="img-wrap">
+                  <img src="images/research/{{ post.image }}" >
+                </div>
+                <div class="article-title">
+                  <h4 class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+                  <h5 class="category">{{ post.journal }}, {{ post.year }}</h5>
+                </div>
+              </header>
+
+              <!-- Article Content -->
+              <div class="article-content">
+                <div class="article-text-full">
+                  <p>{{ post.summary }}</p>
+                </div>
+                <div class="show-more">
+                  <a href="{{ site.baseurl }}{{ post.url }}" class="button">Read More</a>
+                </div>
               </div>
-              <div class="article-title">
-                <h4 class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
-                <h5 class="category">{{ post.journal }}, {{ post.year }}</h5>
-              </div>
-            </header>
 
-            <!-- Article Content -->
-            <div class="article-content">
-              <div class="article-text-full">
-                <p>{{ post.excerpt | strip_html }}</p>
-              </div>
-              <div class="show-more">
-                <a href="{{ site.baseurl }}{{ post.url }}" class="button">Read More</a>
-              </div>
-            </div>
-
-          </article>
-        </div>
-
+            </article>
+          </div>
+        {% endif %}
+        {% endif %}
       {% endfor %}
       <!-- /LOOP-->
 

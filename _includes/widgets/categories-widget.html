@@ -13,11 +13,15 @@
     {% assign cat_list = site.categories %}
       {% if cat_list.first[0] == null %}
         {% for category in cat_list %}
-          <li><a href="{{ site.baseurl }}/research/{{ category | slugify }}">{{ category }} <span class="cat-count">{{ cat_list[category].size }}</span></a></li>
+          {% unless category contains "news" %}
+            <li><a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }} <span class="cat-count">{{ cat_list[category].size }}</span></a></li>
+          {% endunless %}
         {% endfor %}
       {% else %}
         {% for category in cat_list %}
-          <li><a href="{{ site.baseurl }}/research/{{ category[0] | slugify }}">{{ category[0] }} <span class="cat-count">{{ category[1].size }}</span></a></li>
+          {% unless category contains "news" %}
+            <li><a href="{{ site.baseurl }}/category/{{ category[0] | slugify }}">{{ category[0] }} <span class="cat-count">{{ category[1].size }}</span></a></li>
+          {% endunless %}
         {% endfor %}
       {% endif %}
     {% assign cat_list = nil %}

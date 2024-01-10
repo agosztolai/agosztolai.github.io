@@ -35,7 +35,7 @@ jekyll-archives:
     - categories
   layout: "archive"
   permalinks:
-    category: "/:name/"
+    category: "/category/:name/"
 
 #######################################################
 ###############   HEADER INFORMATIONS   ###############
@@ -44,7 +44,7 @@ jekyll-archives:
 # This is your site title
 title: Dynamics of Neural Systems Laboratory
 lang: en-US
-header-title: <strong>D</strong>ynamics <br> of <br> <strong>N</strong>eural <br> <strong>S</strong>ystems <br> Laboratory
+header-title: <strong>D</strong>ynamics <br> <strong>o</strong>f <br> <strong>N</strong>eural <br> <strong>S</strong>ystems <br> Laboratory
 header-tagline: Medical University of Vienna
 
 ####################################
@@ -127,7 +127,7 @@ portfolio:
 ############### Team ################
 #####################################
 team-title: Team
-team-description: Nulla a tellus at turpis gravida congue non interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat vitae volutpat sed, suscipit et nisi. Nulla a tellus at turpis gravida congue non sed nisl. Pellentesque scelerisque eu neque et tincidunt.
+team-description: We are currently looking for talented students to join our lab for intenships of master's projects. Apply by emailing me a CV/resume!
 
 #
 # Team Members

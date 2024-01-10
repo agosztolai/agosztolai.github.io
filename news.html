@@ -3,8 +3,8 @@ layout: page
 title: Lab News
 ---
 
-{% for post in site.news %}
-
+{% for post in site.posts %}
+{% if post.categories contains "news" %}
   <!-- Blog Article -->
   <div class="post-full">
     <article class="blog-article clearfix">
@@ -36,5 +36,5 @@ title: Lab News
 
     </article>
   </div>
-
+{% endif %}
 {% endfor %}

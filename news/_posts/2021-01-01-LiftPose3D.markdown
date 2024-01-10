@@ -1,9 +1,0 @@
----
-layout: post
-title: "LiftPose3D, a deep learning-based approach for transforming two-dimensional to three-dimensional poses in laboratory animals"
-date: 2024-04-01 00:00
-categories: [Lap Opening]
-image: logo.png
----
-
-The Dynamics of Neural Systems Laboratory opens its doors. If you are in Vienna, come and say hi!

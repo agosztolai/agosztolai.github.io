@@ -1,0 +1,362 @@
+<!DOCTYPE html >
+<html lang="en-US">
+
+  <!-- Site Head -->
+<head>
+  <meta charset="utf-8" />
+  <title>Unfolding the multiscale structure of networks with dynamical Ollivier-Ricci curvature</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="/images/logo.png" title="Favicon" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
+  <!-- Importing Styles -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+
+  <body>
+
+    <!-- Page Loader -->
+    <div id="page-loader" class="page-loader"><span class="load-icon"></span></div>
+
+    <!-- Site Header -->
+<header class="site-header blog-header parallax" id="home" data-scrollax-parent="true">
+
+  <!-- Parallax Header Image -->
+  <div class="parallax-wrapper">
+    <div class="cover" data-scrollax="properties: { 'translateY': '48%' }">
+      <img src="/images/header-image.jpg" />
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- Site Navigation Bar -->
+    <div class="row site-navigation-bar parent">
+
+      <!-- Logo -->
+      <div class="col-sm-2 col-xs-4 logo child-center-v">
+        <a href="/index.html"><img src="/images/logo.svg" width="100"
+            alt="Dynamics of Neural Systems Lab Logo"></a>
+      </div>
+
+      <!-- Toggle Mobile Menu -->
+      <div class="col-xs-8 toggle-menu child-center-v">
+
+        <!-- Burger -->
+        <div class="navTrigger">
+          <i></i><i></i><i></i>
+        </div>
+
+      </div>
+
+      <!-- Navigation Bar -->
+      <div class="col-sm-10 col-xs-12 navigation-bar child-center-v">
+
+        <!-- Navigation Menu -->
+        <nav id="navMenu" class="nav-menu">
+          <ul class="menu">
+            <li><a href="/index.html#home">Home</a></li>
+            <li><a href="/index.html#about">About</a></li>
+            <li><a href="/index.html#research">Research</a></li>
+            <li><a href="/index.html#team">Team</a></li>
+            <li><a href="/index.html#news">News</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+    </div>
+
+    <!-- Site Header Banner -->
+    <div class="row header-banner parent" data-scrollax="properties: { 'translateY': '48%', 'opacity': '1.4' }">
+
+      <div class="heading-content text-center child-center-v">
+
+        <!-- Heading Title -->
+        <div class="row heading-title">
+          <h2>
+            
+            
+            
+          </h2>
+          <h2 class="thin">Unfolding the multiscale structure of networks with dynamical Ollivier-Ricci curvature</h2>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Arrow Down -->
+    <div class="row arrow-down-section" data-scrollax="properties: { 'opacity': '0.6' }">
+
+      <div class="wrapper-arrow child-center">
+        <a href="#start" class="arrow-down">
+          <i class="pe-7s-angle-down"></i>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</header>
+
+
+    <!-- Page Section -->
+    <section class="site-section blog-section page-layout" id="start">
+      <div class="container">
+
+        <!-- Page Layout -->
+        <div class="row">
+
+          <!-- Content -->
+          <div class="col-md-8 blog-articles-container">
+
+            <!-- wp:heading -->
+<h2>Understanding networks by their shape</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":1.6}}} -->
+<p style="line-height:1.6">Networks are all around us, but not all networks are easy to conceptualise in the physical world. Some networks such as our nervous system of interconnected neurons, railway lines and electrical power grids are physical objects. Otherwise said, they are embedded in 2-dimensional or 3-dimensional physical space, in the sense that the nodes of the network represent points in space. Meanwhile, other networks such as economic networks, social networks are abstract objects representing interactions between entities. At least for some of these networks, a physical intuition is still possible. For example, consider that nodes contain a list of features and edges are drawn based on the relationship between these features. In a social network, where nodes represent individuals, these features can be their age, sex, work, hobby etc., and nodes are more likely to connect with those with a similar profile. Using these features, one can lay these networks out in physical space. However, the dimension of this space (number of features) can be large, which makes interpretability difficult. In general, though, the vast majority of networks such as the World Wide Web or biochemical networks inside living cells come with no intrinsic notion of space. That is to say, nodes have no spatial coordinates or features to facilitate physical intuition. Instead, the network only represents the abstraction of a set of entities with some connections between them.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group -->
+<div class="wp-block-group"><!-- wp:image {"width":684,"height":250,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large is-resized"><img src="https://adamgosztolai.files.wordpress.com/2021/08/screenshot-2021-08-03-at-16.07.45.png?w=1024" alt="" width="684" height="250" /><figcaption>Networks with edges coloured by their dynamic Ollivier-Ricci curvature (see text) at two different resolutions. Nodes represent clusters based on maximising the average edge curvature within a cluster.</figcaption></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading -->
+<h2>Understanding networks via embeddings</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":1.6}}} -->
+<p style="line-height:1.6">Having a space in which the network can be laid out, a so-called&nbsp;<a rel="noreferrer noopener" href="https://developers.google.com/machine-learning/crash-course/embeddings/video-lecture" target="_blank">embedding space</a>&nbsp;turns out to be very useful to analyse networks. For example, by assuming that the network's nodes follow a continuous structure (<a href="https://en.wikipedia.org/wiki/Manifold">manifold approximation</a>) connections respecting this continuity can be preserved while those violating it may be ignored. This assumption allows unfolding the network in a 2D embedding space, which is often very useful to reveal its structure. A second example relates to&nbsp;<a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Complex_network" target="_blank">complex networks</a>, which are networks obeying&nbsp;<a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Power_law" target="_blank">power-law</a>&nbsp;<a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Degree_distribution" target="_blank">degree distributions</a>. <a href="https://www.nature.com/articles/s41567-018-0072-5">García-Pérez and colleagues</a> found that nodes in complex networks can be naturally embedded in&nbsp;<a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Hyperbolic_space" target="_blank">hyperbolic space</a>, commonly known from M.C. Escher drawings. Remarkably, when nodes are clustered based on proximity in hyperbolic space, the community structure is preserved. In other words, the network structure is invariant under hyperbolic geometry. Finally, without an embedding space, there is no inherent notion of direction (such as left or right) in a network making it harder to understand the spreading of information. Thus finding an embedding space may also be used to study the spreading of dynamical processes in networks, such as epidemics. <a href="https://science.sciencemag.org/content/342/6164/1337">Helbing and colleagues</a> studied the spreading of infectious diseases on networks by defining an effective distance that maps the nodes into a space where the wavefront started at a given node reaches the points at the same time at a given radial distance. Using this distance to map the network into 2D space revealed node communities in which the infection started at a given point in the network arrives at the same time. Such information is very useful for controlling the infectious process by blocking targeted edges.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:gallery {"ids":[496,497,498],"columns":3,"linkTo":"none","ampCarousel":false} -->
+<figure class="wp-block-gallery columns-3 is-cropped"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img src="https://adamgosztolai.files.wordpress.com/2021/08/screenshot-2021-08-03-at-15.40.03-1.png?w=698" alt="" data-id="496" data-link="https://atomic-temporary-128050474.wpcomstaging.com/screenshot-2021-08-03-at-15-40-03-1/" class="wp-image-496" /><figcaption class="blocks-gallery-item__caption">Manifold approximation (Tennenbaum et al., 2000)</figcaption></figure></li><li class="blocks-gallery-item"><figure><img src="https://adamgosztolai.files.wordpress.com/2021/08/screenshot-2021-08-03-at-15.40.10-2.png?w=872" alt="" data-id="497" data-link="https://atomic-temporary-128050474.wpcomstaging.com/screenshot-2021-08-03-at-15-40-10-2/" class="wp-image-497" /><figcaption class="blocks-gallery-item__caption">Hyperbolic space embedding (Garcia-Perez et al., 2018)</figcaption></figure></li><li class="blocks-gallery-item"><figure><img src="https://adamgosztolai.files.wordpress.com/2021/08/screenshot-2021-08-03-at-15.40.31-1.png?w=846" alt="" data-id="498" data-link="https://atomic-temporary-128050474.wpcomstaging.com/screenshot-2021-08-03-at-15-40-31-1/" class="wp-image-498" /><figcaption class="blocks-gallery-item__caption">Dynamic embedding (Helbing et al., 2013) </figcaption></figure></li></ul></figure>
+<!-- /wp:gallery -->
+
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":1.6}}} -->
+<p style="line-height:1.6">While embeddings are useful they also have their dangers. In fact, for many networks, embedding their nodes into any&nbsp;<a rel="noreferrer noopener" target="_blank" href="https://en.wikipedia.org/wiki/Normed_vector_space">normed vector</a>&nbsp;space will necessarily lose much of the information encoded in the connectivity. More precisely stated, the process of embedding stretches and shrinks the edges between pairs of edges by amounts that are comparable to the length of the edge itself. Many techniques in the field of&nbsp;<a rel="noreferrer noopener" target="_blank" href="https://en.wikipedia.org/wiki/Nonlinear_dimensionality_reduction">non-linear dimensionality reduction</a>&nbsp;deal with cleverly 'distributing' these distortions such that relevant features of the data are preserved, while others are lost. For example, the&nbsp;<a rel="noreferrer noopener" target="_blank" href="https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding">t-SNE</a>&nbsp;method, which is popular at the time of writing this text, aims at preserving distance between nearby points, while allowing points far away to be embedded arbitrarily. However, in many cases, this is more of an art and it is currently not well understood what features of the network one should preserve to create meaningful embeddings.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>Geometry of networks</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":1.6}}} -->
+<p style="line-height:1.6">An alternative to using embeddings could be to define the geometry of the network based on analogues borrowed from&nbsp;<a rel="noreferrer noopener" target="_blank" href="https://en.wikipedia.org/wiki/Differential_geometry">differential geometry</a>, which deals with the geometry of continuous spaces. One way to define geometry in continuous spaces is through the concept of&nbsp;<a rel="noreferrer noopener" target="_blank" href="https://en.wikipedia.org/wiki/Curvature">curvature</a>. Consider two points&nbsp;<em>x</em>,&nbsp;<em>y</em>&nbsp;(on a manifold) and move them in parallel in an arbitrary direction to points&nbsp;<em>x'</em>&nbsp;and&nbsp;<em>y'</em>. Note that depending on the geometry of the space, the transported points will be closer or further away. For example, while on a planar surface parallel lines remain parallel, on a sphere they will meet at the poles of the sphere (this reminded me of the&nbsp;<a rel="noreferrer noopener" target="_blank" href="https://www.quora.com/If-a-bear-walks-one-mile-south-turns-left-and-walks-one-mile-to-the-east-and-then-turns-left-again-and-walks-one-mile-north-and-arrives-at-its-original-position-what-is-the-color-of-the-bear">classic riddle</a>&nbsp;posed by George Pólya). Thus, by computing the average distance of points nearby&nbsp;<em>x</em>&nbsp;and points nearby&nbsp;<em>y</em>&nbsp;relative to the distance of&nbsp;<em>x</em>&nbsp;and&nbsp;<em>y</em>, one can define the&nbsp;<a rel="noreferrer noopener" target="_blank" href="https://en.wikipedia.org/wiki/Ricci_curvature">Ricci curvature</a>&nbsp;in direction <em>xy</em>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"align":"center","id":505,"width":405,"height":182,"sizeSlug":"medium"} -->
+<div class="wp-block-image"><figure class="aligncenter size-medium is-resized"><img src="https://adamgosztolai.files.wordpress.com/2021/08/screenshot-2021-08-03-at-15.59.09.png?w=300" alt="" class="wp-image-505" width="405" height="182" /><figcaption>Consider two points <em>x</em>, <em>y</em> in a space. Then move <em>x</em> a small distance in a direction given by the white arrow. Likewise, move <em>y</em> in the same direction (known as <a href="https://en.wikipedia.org/wiki/Parallel_transport">parallel transport</a>). Depending on the curvature of the space, the transported points are on average closer of further.</figcaption></figure></div>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":1.6}}} -->
+<p style="line-height:1.6">Generalising the notion of Ricci curvature to networks is less than straightforward. Because the curvature requires a notion of direction, which is lacking in networks, there is no unique way to define a network geometry. It is therefore not clear which one will yield insights into the structure of the network. In this work, we studied the notion developed by Ollivier, which, 'simply' put, replaces the average distance between points&nbsp;x'&nbsp;and&nbsp;<em>y'</em>&nbsp;with the&nbsp;<a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Transportation_theory_(mathematics)" target="_blank">optimal transport distance</a>. The optimal transport or Wasserstein distance (hence the W) is commonly used to define the distance of distributions supported on metric spaces. It represents the least energy required to move a pile of sand to a pit. The distribution on the neighbours&nbsp;<em>x'</em>&nbsp;can also be thought of as units of sand (to be transported) while the distribution on the neighbours <em>y'</em>&nbsp;as unit holes (to be filled in). Intuitively speaking, when&nbsp;<em>x&nbsp;</em>and&nbsp;<em>y&nbsp;</em>share neighbours, the holes are already filled in without moving a mass. Thus the higher the number of shared neighbours, the lower the transportation distance and the higher the curvature.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"align":"center","id":721,"width":433,"height":219,"sizeSlug":"medium","linkDestination":"none"} -->
+<div class="wp-block-image"><figure class="aligncenter size-medium is-resized"><img src="https://adamgosztolai.files.wordpress.com/2021/08/screenshot-2021-08-03-at-17.16.49-5.png?w=300" alt="" class="wp-image-721" width="433" height="219" /><figcaption>The Ollivier-Ricci curvature is defined by generalising the Ricci curvature by replacing the average distance of points <em>x'</em> and <em>y'</em> by the optimal transport distance.</figcaption></figure></div>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":1.6}}} -->
+<p style="line-height:1.6">When one computes the Ollivier-Ricci curvature only between adjacent nodes on the network (endpoints of an edge), it turns out to be remarkably intuitive. There is a deep analogy between the curvature of canonical networks and canonical geometric spaces, as illustrated by the figure below.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"align":"center","width":362,"height":308,"sizeSlug":"large","className":"is-style-default"} -->
+<div class="wp-block-image is-style-default"><figure class="aligncenter size-large is-resized"><img src="https://adamgosztolai.files.wordpress.com/2021/08/screenshot-2021-08-03-at-17.27.28.png?w=1024" alt="" width="362" height="308" /><figcaption>Correspondence between the Ollivier-Ricci curvature (top) and Ricci curvature (bottom) on canonical geometries.</figcaption></figure></div>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2>Dynamic Ollivier-Ricci curvature</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":1.6}}} -->
+<p style="line-height:1.6">Our idea was to replace the notion of the neighbourhood of points&nbsp;<em>x</em>,&nbsp;<em>y</em>&nbsp;by&nbsp;<a rel="noreferrer noopener" target="_blank" href="https://en.wikipedia.org/wiki/Diffusion_process">diffusion processes</a>&nbsp;started at points&nbsp;<em>x</em>,&nbsp;<em>y</em>. The diffusion processes distribute mass unevenly and on all nodes, rather than just the neighbours, which makes the problem more interesting. In the following figure, the red lines show the edge connecting to two points and the orange and blue semi-circles show the evolving diffusions. One can see that the diffusions stay trapped in well-connected regions of the network for some time before spreading to the rest of the network. In Ollivier's definition, the distance between neighbouring points is equally weighted because all neighbours carry the same mass. By considering diffusions, we place different importance on different pairs of points, i.e., different amounts of mass are placed over nodes as given by the size of semi-circles. Moreover, as the diffusions propagate, the dynamic geometry captures increasingly coarser features of the network. Therefore, instead of a single geometric object (like in classical Ollivier-Ricci curvature), we obtain a family of geometric objects parametrised by the time of diffusion.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:image {"align":"center","id":671,"sizeSlug":"large","linkDestination":"none","className":"is-style-default"} -->
+<div class="wp-block-image is-style-default"><figure class="aligncenter size-large"><img src="https://adamgosztolai.files.wordpress.com/2021/08/ezgif-1-b291722e3f33-1.gif?w=500" alt="" class="wp-image-671" /><figcaption>Propagation of a pair of diffusions started at adjacent nodes in different clusters</figcaption></figure></div>
+<!-- /wp:image --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:image {"align":"center","id":672,"sizeSlug":"large","linkDestination":"none","className":"is-style-default"} -->
+<div class="wp-block-image is-style-default"><figure class="aligncenter size-large"><img src="https://adamgosztolai.files.wordpress.com/2021/08/ezgif-1-3ce516e58b0a-1.gif?w=500" alt="" class="wp-image-672" /><figcaption>Propagation of a pair of diffusions started at adjacent nodes in the same clusters</figcaption></figure></div>
+<!-- /wp:image --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:heading -->
+<h2>Curvature gaps and information propagation</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":1.6}}} -->
+<p style="line-height:1.6">Because of the different timescales on which pairs of diffusions spread in the network one may wonder how this could be reflected in the curvature of the network. One way to answer this is to visualise the curvature evolution, i.e., plotting the curvature value of each edge&nbsp;<em>ij</em>&nbsp;at a given point in time τ that marks the state of the diffusions. An observation is that the curvature distribution splits up into 'bundles' as time progresses. This observation makes sense by looking at the small networks in the insets. When both diffusions start within clusters (well-connected networks regions), they become quickly overlapping, thus increasing the curvature. Meanwhile, for other edges spanning different clusters, the diffusions tend to overlap less and thus the curvature increases more slowly. One can now realise that, eventually, the diffusions stated from anywhere will fully overlap, which will cause the curvatures to increase to the value of one as time goes to infinity. However, interesting structures are found at smaller times, when the network diffusions are still far from being fully dispersed.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":1.6}}} -->
+<p style="line-height:1.6">In our&nbsp;<a rel="noreferrer noopener" target="_blank" href="http://rdcu.be/cp3od">work</a>, we found that the differences in the curvatures of bundles can be related to the rate of information exchange between diffusions. This is mathematically characterised by the rate of&nbsp;<a rel="noreferrer noopener" target="_blank" href="https://en.wikipedia.org/wiki/Mixing_(mathematics)">mixing</a>&nbsp;of diffusions. More precisely, when the curvature reaches 0.75, as shown by the red dashed line, the corresponding pair of diffusions have mixed well. Note, they have not fully dispersed yet (they are not at stationarity). Instead, from this point in time onwards, they will move together until the dispersed state. Looking at the points in time where some diffusion pairs have mixed, shown by the vertical dashes, one can find edges that have still a long way until mixing. We call these curvature gaps that indicate bottlenecks in information flow. These bottlenecks can be visualised too! In the middle figure, we see that the curvature is lower between clusters than within clusters. In the right picture, the curvature is similar for edges within clusters and across the top and bottom clusters, while lower for those between the left and right clusters. These patterns reflect different scales in the graph revealed completely geometrically!</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"align":"center","width":661,"height":221,"sizeSlug":"large","className":"is-style-default"} -->
+<div class="wp-block-image is-style-default"><figure class="aligncenter size-large is-resized"><img src="https://adamgosztolai.files.wordpress.com/2021/08/screenshot-2021-08-03-at-17.57.19.png?w=1024" alt="" width="661" height="221" /><figcaption>Curvature distribution at different time of the diffusion processes. Initially all curvatures are 0. At time progresses, the distribution separates into 'bundles' and develop gaps. When the curvature reachers 0.75, the diffusions are well-mixed between regions spanned by the given edge. Looking at the curvature distribution at timepoints where the individual bundles reach 0.75 visually reveals multiple clusters based on the sign of the curvature.</figcaption></figure></div>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":1.6}}} -->
+<p style="line-height:1.6">To take this idea further, we looked for ways to modify the information flow between clusters. We accomplished this in two ways. First, we changed the ratio between the number of edges between clusters to that within clusters, called the edge density ratio <em>r</em>. A low edge density ratio means that it is hard for the diffusions to pass from one cluster to another, essentially creating more contrast between the communities. Second, but more subtle, we reduced the number of edges in the graph while maintaining the edge density ratio. This has the effect of reducing the mean degree&nbsp;<em>k</em>, the average number of edges connected to each node. The figure below illustrates on a graph with two clusters that as we remove more edges the communities become less distinguishable.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:coblocks/gallery-stacked {"captions":true} -->
+<div class="wp-block-coblocks-gallery-stacked alignfull"><ul class="coblocks-gallery has-fullwidth-images"><li class="coblocks-gallery--item"><figure class="coblocks-gallery--figure"><img src="https://adamgosztolai.files.wordpress.com/2021/08/ezgif-3-e4027fb93754.gif?w=500" alt="" data-id="546" class="wp-image-546 has-shadow-none" /><figcaption class="coblocks-gallery--caption">(right) As the network becomes sparser, there is less information about the community structure. (left) Initially the node degrees are evenly distributed around a mean (~60), which becomes disordered with many low degree and a few high degree nodes.</figcaption></figure></li></ul></div>
+<!-- /wp:coblocks/gallery-stacked -->
+
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":1.6}}} -->
+<p style="line-height:1.6">We then simulated many such graphs for different mean degrees (<em>k</em>) and edge density ratios and computed the curvature gap. From the following figure, it is clear that when the mean degree is lower, a lower edge density ratio suffices to establish a curvature gap. This observation makes sense: the fewer edges the graph has, the larger the contrast needs to be to find communities reliably. As the edge density ratio increases, the curvature gap is no longer different from background noise, shown by the black horizontal line. What is more surprising is that the point at which the curvature gap disappears for a given average degree is the final point when the edges can convey any information about the community structure. In fact, beyond this point, known as the Kesten-Stigum bound, there is no efficient algorithm that can tell the communities apart. When we look at the distribution of the transition points for different mean degrees, the prediction of the curvature gap lies very close to the theoretical prediction! In the&nbsp;<a rel="noreferrer noopener" target="_blank" href="http://rdcu.be/cp3od">paper</a>, we show that this is no coincidence; in fact, the distribution of the curvatures contains all the information to recover the clusters of the graph.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"align":"center","id":674,"width":549,"height":160,"sizeSlug":"medium","linkDestination":"none","className":"is-style-default"} -->
+<div class="wp-block-image is-style-default"><figure class="aligncenter size-medium is-resized"><img src="https://adamgosztolai.files.wordpress.com/2021/08/screenshot-2021-08-03-at-18.13.58-1.png?w=300" alt="" class="wp-image-674" width="549" height="160" /><figcaption>(left) The curvature gap decreases with the edge density ratio (ratio of edges within clusters to between clusters). For sparser networks (lower k), lower edge density ratio is needed to have a curvature gap. (right) The variation of the critical edge density ratio (smallest edge density ratio where the curvature gap no longer exists) with the mean degree is well described by the Kesten-Stigum bound.</figcaption></figure></div>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2>Multiscale network clustering using geometry</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":1.6}}} -->
+<p style="line-height:1.6">Because of the strong link between curvature gap and network communities, one natural application of our theory is&nbsp;<a target="_blank" href="https://en.wikipedia.org/wiki/Community_structure" rel="noreferrer noopener">network clustering</a>&nbsp;or community detection. The nodes of a network can be grouped into communities based on different criteria, so the 'correctness' of communities is in general a subjective matter. However, clustering networks based on finding curvature gaps, i.e., directions of limited information flow is a valuable viewpoint. Firstly, because the curvature distribution encodes all information about the communities (disclaimer: our results show this for&nbsp;<a target="_blank" href="https://en.wikipedia.org/wiki/Stochastic_block_model" rel="noreferrer noopener">stochastic block model</a>&nbsp;graphs), clustering using curvature performs substantially better than classical node-clustering methods such as&nbsp;<a target="_blank" href="https://en.wikipedia.org/wiki/Spectral_clustering" rel="noreferrer noopener">spectral clustering</a>. Secondly, because of the association of low curvature edges with bottlenecks, communities are interpreted as containing nodes that share redundant information and that easily disconnect from the rest of the network. In other words, breaking low curvature edges is expected to have the largest effect on the information spreading.&nbsp;</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":1.6}}} -->
+<p style="line-height:1.6">To show that our framework can truly find useful applications, we clustered two real-world networks: the European power grid network and a network of&nbsp;<a rel="noreferrer noopener" target="_blank" href="https://en.wikipedia.org/wiki/Caenorhabditis_elegans"><em>C. elegans</em></a>&nbsp;neurons constructed based on the similarity of their&nbsp;<a rel="noreferrer noopener" target="_blank" href="https://en.wikipedia.org/wiki/Homeobox">homeobox</a>&nbsp;gene expressions (homeobox genes are genes expressing proteins called transcription factors). Sparing the details for the interested reader, we could reveal striking information in both networks. Clustering the European power grid revealed clusters representing countries and other geographical regions on one scale as well as clusters representing the historical split between Eastern and Western Europe on another scale. All this information from nothing more than the wiring of electrical power lines! Not less interesting is the&nbsp;<em>C. elegans</em>&nbsp;gene expression network. Clustering this network revealed the anatomical type of most of the 302 neurons in the worm! In the future, we hope to find more links between the communities identified from the curvature distribution to physical or biological properties of real-world networks.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:jetpack/tiled-gallery {"columnWidths":[["51.82269","48.17731"]],"ids":[685,687,688]} -->
+<div class="wp-block-jetpack-tiled-gallery aligncenter is-style-rectangular"><div class="tiled-gallery__gallery"><div class="tiled-gallery__row"><div class="tiled-gallery__col" style="flex-basis:51.82269%"><figure class="tiled-gallery__item"><img alt="" data-height="1250" data-id="685" data-link="https://atomic-temporary-128050474.wpcomstaging.com/untitled-2/" data-url="https://adamgosztolai.files.wordpress.com/2021/08/untitled-2.jpg" data-width="838" src="https://adamgosztolai.files.wordpress.com/2021/08/untitled-2.jpg" /></figure></div><div class="tiled-gallery__col" style="flex-basis:48.17731%"><figure class="tiled-gallery__item"><img alt="" data-height="728" data-id="687" data-link="https://atomic-temporary-128050474.wpcomstaging.com/screenshot-2021-08-04-at-17-44-48-1/" data-url="https://adamgosztolai.files.wordpress.com/2021/08/screenshot-2021-08-04-at-17.44.48-1.png" data-width="1178" src="https://adamgosztolai.files.wordpress.com/2021/08/screenshot-2021-08-04-at-17.44.48-1.png" /></figure><figure class="tiled-gallery__item"><img alt="" data-height="426" data-id="688" data-link="https://atomic-temporary-128050474.wpcomstaging.com/untitled-3/" data-url="https://adamgosztolai.files.wordpress.com/2021/08/untitled-3.jpg" data-width="436" src="https://adamgosztolai.files.wordpress.com/2021/08/untitled-3.jpg" /></figure></div></div></div></div>
+<!-- /wp:jetpack/tiled-gallery -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator" />
+
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2>References</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Gosztolai, A., Arnaudon, A. Unfolding the multiscale structure of networks with dynamical Ollivier-Ricci curvature.&nbsp;<em>Nature Communications</em><strong>&nbsp;12</strong>, 4561 (2021) [<a href="https://rdcu.be/cp3od">article</a>][<a href="https://github.com/agosztolai/geometric_clustering">code</a>]</p>
+<!-- /wp:paragraph -->
+
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Site Footer -->
+<footer class="site-footer" id="footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-6 col-md-push-3 footer-info text-center">
+
+        <div class="social-icons">
+          <ul class="icons">
+            <!-- <li><a href="" target="_blank"><i class="fi flaticon-youtube"></i></a></li> -->
+            <li><a href="https://twitter.com/AGosztolai" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+            <li><a href="https://scholar.google.com/citations?user=fVGCjMsAAAAJ&hl=en" target="_blank"><i class="fa-brands fa-google-scholar"></i></a></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+<!-- Go To Top Button -->
+<a href="#home" class="go-to-top-button"><i class="pe-7s-angle-up"></i></a>
+
+
+    <!-- Importing Scripts -->
+
+<!-- Fontawesome -->
+<script src="https://kit.fontawesome.com/590872f71d.js" crossorigin="anonymous"></script>
+
+<!-- jQuery CDN -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- If CDN fails than use local jQuery -->
+<script>window.jQuery || document.write('<script src="/js/jquery-3.0.0.min.js"><\/script>')</script>
+
+<!-- Owl Carousel -->
+<script src="/js/carousel.min.js" charset="utf-8"></script>
+
+<!-- Parallaxing & SmoothScroll -->
+<script src="/js/scrollax.min.js" charset="utf-8"></script>
+
+
+
+<!-- Main JS -->
+<script src="/js/main.js" charset="utf-8"></script>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+  let paths = document.querySelectorAll('.lines path');
+  let polygonsGroup = document.querySelector('.polygons');
+  let svgContainer = document.querySelector('.line-container');
+  let completedAnimation = false;
+  let animationDuration = 3000; // Animation duration in milliseconds
+  let animationStartTime;
+  let targetTime = animationDuration; // Target time for animation completion
+  let animationDelay = 2000; // Delay in milliseconds before animation starts
+
+  polygonsGroup.style.opacity = '0';
+
+  paths.forEach((path) => {
+    let pathLength = path.getTotalLength();
+    path.style.strokeDasharray = pathLength + ' ' + pathLength;
+    path.style.strokeDashoffset = pathLength;
+  });
+
+  function startAnimation() {
+    animationStartTime = performance.now(); // Get the current timestamp
+    requestAnimationFrame(animate);
+  }
+
+  function animate(currentTime) {
+    let elapsed = currentTime - animationStartTime;
+    let animationProgress = Math.min(elapsed / animationDuration, 1);
+
+    paths.forEach((path) => {
+      let pathLength = path.getTotalLength();
+      let drawLength = pathLength * (1 - animationProgress);
+      path.style.strokeDashoffset = drawLength;
+    });
+
+    if (animationProgress < 1) {
+      requestAnimationFrame(animate);
+    } else {
+      polygonsGroup.style.opacity = '1';
+    }
+  }
+
+  setTimeout(startAnimation, animationDelay); // Start the animation after a delay
+});
+
+  </script>
+
+
+  </body>
+
+</html>

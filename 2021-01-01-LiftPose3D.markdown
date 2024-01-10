@@ -1,8 +1,0 @@
----
-layout: post
-date: 2024-02-01 00:00
-categories: [Lab opening]
-image: logo.png
----
-
-The Dynamics of Neural Systems Lab opens its doors! If you are in Vienna, come and say hi! We are soon to welcome our first PhD student.
