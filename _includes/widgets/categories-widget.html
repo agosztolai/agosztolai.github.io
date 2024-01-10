@@ -10,14 +10,14 @@
   <div class="widget-content">
 
     <ul class="categories-box">
-    {% assign cat_list = site.tags %}
+    {% assign cat_list = site.categories %}
       {% if cat_list.first[0] == null %}
         {% for category in cat_list %}
-          <li><a href="{{ site.baseurl }}/tag/{{ category | slugify }}">{{ category }} <span class="cat-count">{{ cat_list[category].size }}</span></a></li>
+          <li><a href="{{ site.baseurl }}/research/{{ category | slugify }}">{{ category }} <span class="cat-count">{{ cat_list[category].size }}</span></a></li>
         {% endfor %}
       {% else %}
         {% for category in cat_list %}
-          <li><a href="{{ site.baseurl }}/tag/{{ category[0] | slugify }}">{{ category[0] }} <span class="cat-count">{{ category[1].size }}</span></a></li>
+          <li><a href="{{ site.baseurl }}/research/{{ category[0] | slugify }}">{{ category[0] }} <span class="cat-count">{{ category[1].size }}</span></a></li>
         {% endfor %}
       {% endif %}
     {% assign cat_list = nil %}

@@ -3,7 +3,7 @@ layout: page
 title: Publications
 ---
 
-{% for post in site.research %}
+{% for post in site.posts %}
 
   <!-- Blog Article -->
   <div class="post-full">
@@ -11,18 +11,13 @@ title: Publications
 
       <!-- Article Header -->
       <header class="article-header">
-        <div class="article-title">
-          <h4 class="title">{{ post.title }}</a></h4>
-          <h5 class="category">{{ post.authors}}, {{ post.journal}}, ({{ post.year}})</h5>
+        <div ">
+          <h4 class="title"><a href="{{ post.paperurl }}">{{ post.title }}</a></h4>
+          <h5 class="category">{{ post.authors}}</h5>
+          <h5 class="category" style="margin-bottom: 10px;"><a href="{{ post.paperurl }}">{{ post.journal }}</a> ({{ post.year}})</h5>
+          <h5 class="category" >{% if post.codeurl != null %}<a href="{{ post.codeurl }}">[code]</a>{% endif %}{% if post.videosummary != null %}<a href="{{ post.videosummary }}"> [video summary]</a>{% endif %}</h5>
         </div>
       </header>
-
-      <!-- Article Content -->
-      <div class="article-content">
-        <div class="show-more">
-          <a href="{{ site.baseurl }}{{ post.url }}" class="button">Read More</a>
-        </div>
-      </div>
 
     </article>
   </div>

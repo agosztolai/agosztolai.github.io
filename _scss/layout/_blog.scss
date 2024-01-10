@@ -207,6 +207,15 @@ section.blog-section {
           }
         }
 
+        .article-text-full {
+          font-size: 0.9rem;
+          float: left;
+
+          p {
+            line-height: 1.4;
+          }
+        }
+
         // Show More
         .show-more {
           display: block;

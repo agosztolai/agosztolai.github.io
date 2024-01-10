@@ -79,7 +79,6 @@
             
             
             
-
           </h2>
           <h1 class="thin">Lab News</h1>
         </div>
@@ -131,6 +130,14 @@
     
       
         
+          <li><a href="/research/machine-learning">machine learning <span class="cat-count">2</span></a></li>
+        
+          <li><a href="/research/computational-neuroscience">computational neuroscience <span class="cat-count">2</span></a></li>
+        
+          <li><a href="/research/dynamical-systems">dynamical systems <span class="cat-count">2</span></a></li>
+        
+          <li><a href="/research/geometry">geometry <span class="cat-count">2</span></a></li>
+        
       
     
     </ul>
@@ -157,11 +164,10 @@
       <!-- Article Header -->
       <header class="article-header">
         <div class="img-wrap">
-          <img src="/images/news/logo.png" alt="Article Blog Image">
+          <img src="/images/news/logo.png">
         </div>
         <div class="article-title">
-          <h3 class="title"><a href="/news/2021-01-01-LiftPose3D.html">The Dynamics of Neural Systems Lab opens its doors!</a></h3>
-          <h4 class="category">dynamical systems</h4>
+          <h3 class="category">Lap Opening</h3>
         </div>
       </header>
 
@@ -170,14 +176,14 @@
         <div class="article-date text-center">
           <div class="date parent">
             <div class="date-wrap child-center">
-              <div class="day">01</div>
-              <div class="month">Feb</div>
+              <div class="year">2024</div>
+              <div class="month">Apr</div>
             </div>
           </div>
-          <div class="time">00:00</div>
         </div>
         <div class="article-text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum condimentum justo, rhoncus ullamcorper orci dapibus eget. Aliquam id efficitur lacus. Donec ac mattis ante. Nam vehicula turpis augue. Aliquam erat volutpat.</p> <p>Aliquam fermentum ornare iaculis. Proin vehicula nisi sed vestibulum consectetur. Praesent placerat enim eu justo euismod, vel consequat ligula mollis. Quisque mollis, lacus sed imperdiet finibus, risus felis tempor sapien, in suscipit sem nulla bibendum magna. Curabitur venenatis condimentum ipsum, at hendrerit dui...
+          <p>The Dynamics of Neural Systems Laboratory opens its doors. If you are in Vienna, come and say hi!</p>
+
         </div>
       </div>
 
@@ -244,52 +250,48 @@
 
 <script>
 
-    document.addEventListener("DOMContentLoaded", function() {
-      let paths = document.querySelectorAll('.lines path');
-      let polygonsGroup = document.querySelector('.polygons');
-      let svgContainer = document.querySelector('.line-container');
-      let completedAnimation = false;
-      let targetScroll = window.innerHeight;
+document.addEventListener("DOMContentLoaded", function() {
+  let paths = document.querySelectorAll('.lines path');
+  let polygonsGroup = document.querySelector('.polygons');
+  let svgContainer = document.querySelector('.line-container');
+  let completedAnimation = false;
+  let animationDuration = 3000; // Animation duration in milliseconds
+  let animationStartTime;
+  let targetTime = animationDuration; // Target time for animation completion
+  let animationDelay = 2000; // Delay in milliseconds before animation starts
 
-      polygonsGroup.style.opacity = '0';
+  polygonsGroup.style.opacity = '0';
 
-      paths.forEach((path) => {
-        let pathLength = path.getTotalLength();
-        path.style.strokeDasharray = pathLength + ' ' + pathLength;
-        path.style.strokeDashoffset = pathLength;
-      });
+  paths.forEach((path) => {
+    let pathLength = path.getTotalLength();
+    path.style.strokeDasharray = pathLength + ' ' + pathLength;
+    path.style.strokeDashoffset = pathLength;
+  });
 
-      function handleScroll() {
-        let scrollPos = window.scrollY;
+  function startAnimation() {
+    animationStartTime = performance.now(); // Get the current timestamp
+    requestAnimationFrame(animate);
+  }
 
-        if (!completedAnimation && scrollPos >= targetScroll) {
-          polygonsGroup.style.opacity = '1';
-          completedAnimation = true;
-        } else if (completedAnimation && scrollPos < targetScroll) {
-          completedAnimation = false;
-        }
+  function animate(currentTime) {
+    let elapsed = currentTime - animationStartTime;
+    let animationProgress = Math.min(elapsed / animationDuration, 1);
 
-        if (completedAnimation) {
-          let scrollBeyondViewport = scrollPos - targetScroll;
-          if (scrollBeyondViewport > 0) {
-            svgContainer.style.transform = `translateY(-${scrollBeyondViewport}px)`;
-          } else {
-            svgContainer.style.transform = 'translateY(0)';
-          }
-        } else {
-          let animationProgress = scrollPos / targetScroll;
-          paths.forEach((path) => {
-            let pathLength = path.getTotalLength();
-            let drawLength = pathLength * animationProgress;
-            path.style.strokeDashoffset = pathLength - drawLength;
-          });
-          svgContainer.style.transform = 'translateY(0)';
-          polygonsGroup.style.opacity = '0';
-        }
-      }
-
-      window.addEventListener('scroll', handleScroll);
+    paths.forEach((path) => {
+      let pathLength = path.getTotalLength();
+      let drawLength = pathLength * (1 - animationProgress);
+      path.style.strokeDashoffset = drawLength;
     });
+
+    if (animationProgress < 1) {
+      requestAnimationFrame(animate);
+    } else {
+      polygonsGroup.style.opacity = '1';
+    }
+  }
+
+  setTimeout(startAnimation, animationDelay); // Start the animation after a delay
+});
 
   </script>
 

@@ -24,51 +24,47 @@
 
 <script>
 
-    document.addEventListener("DOMContentLoaded", function() {
-      let paths = document.querySelectorAll('.lines path');
-      let polygonsGroup = document.querySelector('.polygons');
-      let svgContainer = document.querySelector('.line-container');
-      let completedAnimation = false;
-      let targetScroll = window.innerHeight;
+document.addEventListener("DOMContentLoaded", function() {
+  let paths = document.querySelectorAll('.lines path');
+  let polygonsGroup = document.querySelector('.polygons');
+  let svgContainer = document.querySelector('.line-container');
+  let completedAnimation = false;
+  let animationDuration = 3000; // Animation duration in milliseconds
+  let animationStartTime;
+  let targetTime = animationDuration; // Target time for animation completion
+  let animationDelay = 2000; // Delay in milliseconds before animation starts
 
-      polygonsGroup.style.opacity = '0';
+  polygonsGroup.style.opacity = '0';
 
-      paths.forEach((path) => {
-        let pathLength = path.getTotalLength();
-        path.style.strokeDasharray = pathLength + ' ' + pathLength;
-        path.style.strokeDashoffset = pathLength;
-      });
+  paths.forEach((path) => {
+    let pathLength = path.getTotalLength();
+    path.style.strokeDasharray = pathLength + ' ' + pathLength;
+    path.style.strokeDashoffset = pathLength;
+  });
 
-      function handleScroll() {
-        let scrollPos = window.scrollY;
+  function startAnimation() {
+    animationStartTime = performance.now(); // Get the current timestamp
+    requestAnimationFrame(animate);
+  }
 
-        if (!completedAnimation && scrollPos >= targetScroll) {
-          polygonsGroup.style.opacity = '1';
-          completedAnimation = true;
-        } else if (completedAnimation && scrollPos < targetScroll) {
-          completedAnimation = false;
-        }
+  function animate(currentTime) {
+    let elapsed = currentTime - animationStartTime;
+    let animationProgress = Math.min(elapsed / animationDuration, 1);
 
-        if (completedAnimation) {
-          let scrollBeyondViewport = scrollPos - targetScroll;
-          if (scrollBeyondViewport > 0) {
-            svgContainer.style.transform = `translateY(-${scrollBeyondViewport}px)`;
-          } else {
-            svgContainer.style.transform = 'translateY(0)';
-          }
-        } else {
-          let animationProgress = scrollPos / targetScroll;
-          paths.forEach((path) => {
-            let pathLength = path.getTotalLength();
-            let drawLength = pathLength * animationProgress;
-            path.style.strokeDashoffset = pathLength - drawLength;
-          });
-          svgContainer.style.transform = 'translateY(0)';
-          polygonsGroup.style.opacity = '0';
-        }
-      }
-
-      window.addEventListener('scroll', handleScroll);
+    paths.forEach((path) => {
+      let pathLength = path.getTotalLength();
+      let drawLength = pathLength * (1 - animationProgress);
+      path.style.strokeDashoffset = drawLength;
     });
+
+    if (animationProgress < 1) {
+      requestAnimationFrame(animate);
+    } else {
+      polygonsGroup.style.opacity = '1';
+    }
+  }
+
+  setTimeout(startAnimation, animationDelay); // Start the animation after a delay
+});
 
   </script>

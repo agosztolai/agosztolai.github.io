@@ -14,8 +14,7 @@ baseurl: ""
 collections:
   news:
     output: true
-  research:
-    output: true
+    permalink: /news/:title/
 
 # the base hostname & protocol for your site
 url: "http://localhost:4000"
@@ -34,10 +33,9 @@ plugins:
 jekyll-archives:
   enabled:
     - categories
-    - tags
   layout: "archive"
   permalinks:
-    category: "/category/:name/"
+    category: "/:name/"
 
 #######################################################
 ###############   HEADER INFORMATIONS   ###############
@@ -46,8 +44,8 @@ jekyll-archives:
 # This is your site title
 title: Dynamics of Neural Systems Laboratory
 lang: en-US
-header-title: <strong>D</strong>ynamics of <strong>N</strong>eural <strong>S</strong>ystems Laboratory
-headter-tagline: Medical University of Vienna
+header-title: <strong>D</strong>ynamics <br> of <br> <strong>N</strong>eural <br> <strong>S</strong>ystems <br> Laboratory
+header-tagline: Medical University of Vienna
 
 ####################################
 ######   CTA Header Buttons   ######

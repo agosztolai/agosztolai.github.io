@@ -29,7 +29,7 @@
                 <img src="images/news/{{ post.image }}" alt="Article Blog Image">
               </div>
               <div class="article-title">
-                <h4 class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+                <h4 class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.categories | first }}</a></h4>
               </div>
             </header>
 
@@ -38,8 +38,8 @@
               <div class="article-date text-center">
                 <div class="date parent">
                   <div class="date-wrap child-center">
-                    <div class="day">{{ post.date | date: "%d" }}</div>
                     <div class="month">{{ post.date | date: "%b" }}</div>
+                    <div class="year">{{ post.date | date: "%Y" }}</div>
                   </div>
                 </div>
               </div>
