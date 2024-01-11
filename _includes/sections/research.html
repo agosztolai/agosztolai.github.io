@@ -26,7 +26,7 @@
       <!-- Jekyll LOOP -->
       {% for post in site.posts %}
         {% if counter < 3 %}
-        {% if post.categories contains "research" %}
+        {% if post.categories contains "research" and post.summary != null %}
         {% assign counter = counter | plus: 1 %}
 
           <!-- Blog Article -->

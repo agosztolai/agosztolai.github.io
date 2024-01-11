@@ -3,9 +3,10 @@ layout: page
 title: Publications
 ---
 
-{% for post in site.posts %}
-  {% if post.categories contains "research" %}
+{% assign sorted_posts = site.posts | where: "categories", "research" | sort: "date" | reverse %}
 
+{% for post in sorted_posts %}
+    {% assign strippedContent = post.content | strip %}
     <!-- Blog Article -->
     <div class="post-full">
       <article class="blog-article clearfix">
@@ -16,11 +17,10 @@ title: Publications
             <h4 class="title"><a href="{{ post.paperurl }}">{{ post.title }}</a></h4>
             <h5 class="category">{{ post.authors}}</h5>
             <h5 class="category" style="margin-bottom: 10px;"><em><a href="{{ post.paperurl }}">{{ post.journal }}</a></em> ({{ post.year}})</h5>
-            <h5 class="category" >{% if post.codeurl != null %}<a href="{{ post.codeurl }}">[code]</a>{% endif %}{% if post.videosummary != null %}<a href="{{ post.videosummary }}"> [video summary]</a>{% endif %}{% if post.blogpost != null %}<a href="{{ post.blogpost }}"> [blog post]</a>{% endif %}</h5>
+            <h5 class="category" >{% if post.codeurl != null %}<a href="{{ post.codeurl }}">[code]</a>{% endif %}{% if post.videosummary != null %}<a href="{{ post.videosummary }}"> [video summary]</a>{% endif %}{% unless strippedContent == "" %}<a href="{{ post.url }}"> [blog post]</a>{% endunless %}</h5>
           </div>
         </header>
 
       </article>
     </div>
-  {% endif %}
 {% endfor %}

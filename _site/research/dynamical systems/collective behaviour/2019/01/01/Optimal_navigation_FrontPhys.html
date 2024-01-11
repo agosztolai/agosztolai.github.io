@@ -4,7 +4,7 @@
   <!-- Site Head -->
 <head>
   <meta charset="utf-8" />
-  <title>Lab opening</title>
+  <title>Collective search with finite perception: transient dynamics and search efficiency</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="shortcut icon" href="/images/logo.png" title="Favicon" />
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
@@ -80,7 +80,7 @@
             
             
           </h2>
-          <h2 class="thin">Lab opening</h2>
+          <h2 class="thin">Collective search with finite perception: transient dynamics and search efficiency</h2>
         </div>
 
       </div>
@@ -109,94 +109,31 @@
         <!-- Page Layout -->
         <div class="row">
 
-          <!-- Sidebar -->
-          <div class="col-md-4 hidden-xs hidden-sm">
-
-            <!-- Site Sidebar -->
-<aside class="site-sidebar">
-
-  <!-- Categories Widget -->
-<div class="widget categories-widget">
-
-  <!-- Widget Header -->
-  <header class="widget-header">
-    <h4 class="widget-title">Categories</h4>
-  </header>
-
-  <!-- Widget Content -->
-  <div class="widget-content">
-
-    <ul class="categories-box">
-    
-      
-        
-          
-            <li><a href="/category/research">research <span class="cat-count">8</span></a></li>
-          
-        
-          
-            <li><a href="/category/dynamical-systems">dynamical systems <span class="cat-count">6</span></a></li>
-          
-        
-          
-            <li><a href="/category/systems-biology">systems biology <span class="cat-count">1</span></a></li>
-          
-        
-          
-            <li><a href="/category/collective-behaviour">collective behaviour <span class="cat-count">2</span></a></li>
-          
-        
-          
-            <li><a href="/category/machine-learning">machine learning <span class="cat-count">3</span></a></li>
-          
-        
-          
-            <li><a href="/category/computational-neuroscience">computational neuroscience <span class="cat-count">2</span></a></li>
-          
-        
-          
-            <li><a href="/category/geometry">geometry <span class="cat-count">4</span></a></li>
-          
-        
-          
-        
-      
-    
-    </ul>
-
-  </div>
-
-</div>
-
-
-</aside>
-
-
-          </div>
-
           <!-- Content -->
           <div class="col-md-8 blog-articles-container">
 
-            <!-- Blog Article -->
-<div class="post-full">
-  <article class="blog-article blog-single-page clearfix">
+            <h2 id="the-role-of-spatial-perception-in-ecological-navigation">The role of spatial perception in ecological navigation</h2>
 
-    <!-- Article Header -->
-    <header class="article-header">
-      <div class="article-title">
-        <h2 >Lab opening</h2>
-        <h4 >  </h4>
-      </div>
-    </header>
+<p>Movement, exploration and search are ubiquitous behaviours among many organisms. Low on the tree of life, bacteria have evolved the ability of <a href="https://en.wikipedia.org/wiki/Chemotaxis">chemotaxis</a> to navigate landscapes of concentrations to find nutrients or to avoid toxins. As another example, pigeons have an exceptional ability to navigate based on visual landmarks, among other cues, to find their way back home. Finally, many mammals have evolved a complex network of neurons including, but not limited to, grid cells and place cells to represent and search physical spaces, or perhaps even the space of memories.</p>
 
-    <!-- Article Content -->
-    <div class="article-content">
-      <p>The Dynamics of Neural Systems Laboratory opens its doors. If you are in Vienna, come and say hi!</p>
+<p><img src="https://adamgosztolai.files.wordpress.com/2018/09/fig1.jpg" alt="Fig1" />
+<em>Illustration of an animal searcher (fly) navigating a heterogeneous environment based on a finite perceptual horizon.</em></p>
 
-    </div>
+<p>A common feature among many animal searchers is using information from a <em>finite perceptual range</em> about their environments gathered through visual cues or other sensory cues. Studying how such limited spatial awareness facilitates search and exploration is a key step towards a deeper understanding of how more complex internal representations of space leads to efficient navigation.</p>
 
-  </article>
-</div>
+<p>First, let me provide some intuition. Consider a biased <a href="https://en.wikipedia.org/wiki/Random_walk">random walker</a> (as it turns out, the movement of many animals can be modeled as a biased random walk) searching for nutrients in a landscape. How much spatial knowledge does the random walker need to find the spot where the nutrient is most abundant? It depends on how much time the random walker devotes to search. If the search time is not limited, knowing the local gradient (which way is up or down) suffices since, eventually, the walker will explore the whole space and find the target. Similarly, if only a very short time is given to the searcher, following the gradient is as good as it can do since it gives the searcher the best shot at reaching the local peak. Many biological systems, however, operate in between these two extremes time-scales, i.e. there is often a limited time to find a nutrient before it diffuses away or perhaps eaten by a lion. In this case, there could be a benefit of having a finite perceptual range; this could allow the random walker to preferentially exploit certain directions since spending energy searching in other directions will likely not result in as much reward.</p>
+
+<p>To understand how limiting it really is to search based on a limited perceptual horizon, we proposed a parsimonious mathematical model based on biased random walks and <a href="https://en.wikipedia.org/wiki/Optimal_control">optimal control theory</a>. In this mathematical framework, finite perception appears naturally as the time horizon over which the searchers optimize their motion. Then, to shed light on the role of spatial perception we studied how quickly searchers found the source of a diffusing stimulant when they were moving alone or as a part of an interacting population.</p>
+
+<p>We found that when searchers were given a limited time for searching they were more efficient at finding their targets when they had finite perceptual range compared to when they were only aware of the local gradient of their search landscape, which most classical studies of ecological search assume. Among all possible “look-around” horizons, there was an optimal one, which was comparable with the spatial scale of the landscape. Perhaps more surprisingly, there was no benefit of being aware of space beyond the optimal horizon; searchers with the optimal horizon could navigate as efficiently as those having complete information about the environment. Finally, we found an advantage of being part of a group; when searchers interacted through a secreted chemical, such as a pheromone, the optimal perceptual horizon further shrunk due to collective sensing.</p>
+
+<p>In follow-up work, we study how even primitive sensory systems, such as the biochemical pathway controlling the chemotaxis of <em>E. coli</em>, can encode a finite perceptual range and use it to improve search performance.</p>
+
+<hr />
+
+<h5 id="original-publication">Original publication</h5>
+
+<p><strong>Gosztolai, A</strong>., Carrillo J. A., Barahona, M. Collective search with finite perception: transient dynamics and search efficiency. <em>Frontiers in Physics, 6, 153 (2019)</em> <a href="https://www.frontiersin.org/articles/10.3389/fphy.2018.00153/full">article</a> <a href="https://figshare.com/articles/Matlab_code_of_the_optimal_navigation_ON_model/7477568">code</a></p>
 
 
           </div>
