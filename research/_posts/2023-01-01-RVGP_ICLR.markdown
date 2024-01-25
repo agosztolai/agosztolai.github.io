@@ -4,7 +4,7 @@ title: "Implicit Gaussian process representation of vector fields over arbitrary
 date: 2023-01-01 00:00
 categories: [machine learning, geometry]
 authors: Peach, R. L., Vinao-Varl, M., Grossman, N., David, M., Mallas, E., Sharp, D., Malhotra, P. A., Vandergheynst, P., Gosztolai, A.
-journal: under review
+journal: ICLR
 year: 2024
 paperurl: https://arxiv.org/abs/2309.16746
 codeurl: https://github.com/agosztolai/RVGP

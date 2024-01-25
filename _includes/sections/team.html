@@ -26,9 +26,15 @@
       <!-- Member -->
       <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
         <div class="team-member">
+          {% if member.linkname != null %}
           <div class="img-wrapper">
-            <img src="{{ site.baseurl }}/images/avatars/{{ member.avatar }}" alt="Avatar Team Member" />
+            <a href="{{ site.baseurl }}/team/{{ member.linkname }}">
+              <img src="{{ site.baseurl }}/images/avatars/{{ member.avatar }}" alt="Avatar Team Member" />
+            </a>
           </div>
+          {% else %}
+            <img src="{{ site.baseurl }}/images/avatars/{{ member.avatar }}" alt="Avatar Team Member" />
+          {% endif %}
           <div class="team-member-content">
             <h3 class="name">{{ member.name }}</h3>
             <h4 class="tagline">{{ member.tagline }}</h4>

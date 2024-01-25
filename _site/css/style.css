@@ -1326,9 +1326,13 @@ section.team-section .team-members-container .team-member { background: #fff; ma
 
 section.team-section .team-members-container .team-member .img-wrapper { display: block; position: relative; overflow: hidden; }
 
-section.team-section .team-members-container .team-member .img-wrapper:before, section.team-section .team-members-container .team-member .img-wrapper:after { content: ''; display: block; position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; background: rgba(33, 194, 248, 0.8); z-index: 1; opacity: 0; transform: translate(-50%, -50%); transition: all 300ms ease-in-out; }
+section.team-section .team-members-container .team-member .img-wrapper a { display: block; position: relative; overflow: hidden; }
 
-section.team-section .team-members-container .team-member .img-wrapper:after { content: "\e623"; font-family: '7-stroke'; font-size: 4rem; width: auto; height: auto; color: #fff; background: transparent; }
+section.team-section .team-members-container .team-member .img-wrapper a:before, section.team-section .team-members-container .team-member .img-wrapper a:after { content: ''; display: block; position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; background: rgba(33, 194, 248, 0.8); z-index: 1; opacity: 0; transform: translate(-50%, -50%); transition: all 300ms ease-in-out; }
+
+section.team-section .team-members-container .team-member .img-wrapper a:after { content: "\e623"; font-family: '7-stroke'; font-size: 4rem; width: auto; height: auto; color: #fff; background: transparent; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+section.team-section .team-members-container .team-member .img-wrapper a:hover:before, section.team-section .team-members-container .team-member .img-wrapper a:hover:after { opacity: 1; }
 
 section.team-section .team-members-container .team-member .team-member-content { padding: 30px 30px 20px 30px; }
 

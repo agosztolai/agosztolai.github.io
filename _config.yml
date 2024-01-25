@@ -42,9 +42,9 @@ jekyll-archives:
 #######################################################
 
 # This is your site title
-title: Dynamics of Neural Systems Laboratory
+title: Systems Neural Dynamics Laboratory
 lang: en-US
-header-title: <strong>D</strong>ynamics <br> <strong>o</strong>f <br> <strong>N</strong>eural <br> <strong>S</strong>ystems <br> Laboratory
+header-title: <strong>Sy</strong>stems <br> <strong>N</strong>eural <br> <strong>Dy</strong>namics <br> Laboratory
 header-tagline: Medical University of Vienna
 
 ####################################
@@ -137,6 +137,7 @@ team:
   - name: Adam Gosztolai
     tagline: Principal Investigator
     avatar: adam.jpg
+    linkname: adamgosztolai
 
     # Social Links
     email: "mailto:gosztola@mit.edu"
