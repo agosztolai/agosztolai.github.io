@@ -42,9 +42,9 @@ jekyll-archives:
 #######################################################
 
 # This is your site title
-title: Systems Neural Dynamics Laboratory
+title: Dynamics of Neural Systems Laboratory
 lang: en-US
-header-title: <strong>Sy</strong>stems <br> <strong>N</strong>eural <br> <strong>Dy</strong>namics <br> Laboratory
+header-title: <strong>D</strong>ynamics <br> <strong>O</strong>f <br> <strong>N</strong>eural <br> <strong>S</strong>ystems <br> Laboratory
 header-tagline: Medical University of Vienna
 
 ####################################
