@@ -7,7 +7,7 @@ permalink: /team/adamgosztolai/
 ## Brief CV
 <br>
 
-**2024-present Independent Group Loeader** -- AI Institute, Medical University of Vienna
+**2024-present Independent Group Leader** -- AI Institute, Medical University of Vienna
 
 **2023-present Research Affiliate** -- McGovern Institute for Brain Research, MIT
 
