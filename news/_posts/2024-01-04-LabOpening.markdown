@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Lab opening"
-date: 2024-01-04 00:00
+date: 2024-04-01 00:00
 categories: [news]
 image: logo.png
 ---

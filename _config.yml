@@ -79,6 +79,9 @@ mailchimp:
   user-id: REPLACEME
   list-id: REPLACEME
 
+# show future posts
+future: true
+
 #####################################
 #############   About   #############
 #####################################
