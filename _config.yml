@@ -149,9 +149,9 @@ team:
     github: "https://github.com/agosztolai"
 
   # Team Member
-  - name: 
-    tagline: PhD student
-    avatar: placeholder.jpg
+  - name: Albert López I Serrano
+    tagline: PhD Student, start 9/2024 <br> BSc Mathematics <br> MSc Mathematics 
+    avatar: albert.jpg
 
   # Team Member
   - name: 
