@@ -141,8 +141,6 @@ team:
     tagline: Principal Investigator
     avatar: adam.jpg
     linkname: adamgosztolai
-
-    # Social Links
     email: "mailto:gosztola@mit.edu"
     twitter: "https://twitter.com/AGosztolai"
     scholar: "https://scholar.google.com/citations?user=fVGCjMsAAAAJ&hl=en"
@@ -152,6 +150,7 @@ team:
   - name: Albert López I Serrano
     tagline: PhD Student, start 9/2024 <br> BSc Mathematics <br> MSc Mathematics 
     avatar: albert.jpg
+    scholar: "https://scholar.google.com/citations?user=5VlwDvsAAAAJ&hl=en"
 
   # Team Member
   - name: 
