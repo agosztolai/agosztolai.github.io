@@ -9,8 +9,6 @@ permalink: /team/adamgosztolai/
 
 **2024-present Independent Group Leader** -- AI Institute, Medical University of Vienna
 
-**2023-present Research Affiliate** -- McGovern Institute for Brain Research, MIT
-
 **2022-2024 Postdoctoral Fellow** -- École polytechnique fédérale de Lausanne (EPFL)
 
 *Advisor:* [Pierre Vandergheynst](https://people.epfl.ch/pierre.vandergheynst)
