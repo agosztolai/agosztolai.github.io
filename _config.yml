@@ -130,7 +130,7 @@ portfolio:
 ############### Team ################
 #####################################
 team-title: Team
-team-description: We are currently looking for talented students to join our lab for intenships of master's projects. Apply by emailing me a CV/resume!
+team-description: We are currently looking for talented students to join our lab for paid intenships or master's projects. While we do not currently have a job opening for PhD studentships, we are always on the search for highly motivated prospective PhD students. Finally, we also welcome applications from postdoctoral candidates who are interested in applying for one of the competitive fellowships (MSCA, HFSP, etc.). If you are interested in the science we are pursuing, please get in touch, we would love to get to know you! You can also directly apply by emailing me a CV/resume.
 
 #
 # Team Members
@@ -154,5 +154,5 @@ team:
 
   # Team Member
   - name: 
-    tagline: Master's student
+    tagline: You?
     avatar: placeholder.jpg
