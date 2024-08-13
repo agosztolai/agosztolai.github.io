@@ -148,11 +148,16 @@ team:
 
   # Team Member
   - name: Albert López I Serrano
-    tagline: PhD Student, start 9/2024 <br> BSc Mathematics <br> MSc Mathematics 
+    tagline: PhD Student <br> BSc Mathematics <br> MSc Mathematics 
     avatar: albert.jpg
     scholar: "https://scholar.google.com/citations?user=5VlwDvsAAAAJ&hl=en"
 
   # Team Member
-  - name: 
+  - name: Jakob Lembacher
+    tagline: Project student <br> Medicine
+    avatar: jakob.jpg
+
+  # Placeholder
+  - name:
     tagline: You?
     avatar: placeholder.jpg
