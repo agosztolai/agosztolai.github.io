@@ -8,6 +8,30 @@
 
 section.blog-section {
 
+  ul {
+    list-style-type: disc; /* Makes the bullets appear */
+    margin-left: 20px;     /* Adjusts the indentation of the bullets */
+    padding-left: 20px;    /* Adds padding to ensure the bullets aren't too close to the text */
+  }
+
+  li {
+      margin-bottom: 10px;   /* Adds spacing between list items for better readability */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Adjust size as needed */
+    font-weight: bold; /* This makes the font bold */
+    margin-top: 20px;
+    margin-bottom: 20px; /* Increase this value to add more space */
+  }
+
+  /* Add more space below h3 headers */
+  h3 {
+    font-size: 1.2rem; /* Adjust size as needed */
+    font-weight: bold; /* This makes the font bold */
+    margin-bottom: 10px;
+  }
+
   // Blog Page
   &.page-layout {
     padding-top: 30px;

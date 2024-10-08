@@ -130,7 +130,7 @@ portfolio:
 ############### Team ################
 #####################################
 team-title: Team
-team-description: We are currently seeking to recruit new team members at all levels (Postdoc, PhD, Master's projects)!! If you are interested in the science we are pursuing, we would love to get to know you! To enquire, please send an e-mail to Adam Gosztolai with your CV/resume and a motivation letter describing the research questions you would like to address and why you are the person for the job. It is unfortunate that female candidates in AI and computational neuroscience are still underrepresented, and we are doing our best to address this gap. Thus, we especially encourage talented female candidates to apply. If you have any questions, feel free to reach out informally.     
+team-description: We are currently seeking to recruit new team members at all levels (Postdoc, PhD, Master's projects)! See Lab News for more info.   
 
 #
 # Team Members
@@ -158,10 +158,9 @@ team:
     email: "mailto:albert.lopeziserrano@meduniwien.ac.at"
     scholar: "https://scholar.google.com/citations?user=5VlwDvsAAAAJ&hl=en"
 
-  - name: Jakob Lembacher
-    tagline: Project student <br> Medicine
-    avatar: jakob.jpg
+  - name: You?
+    avatar: placeholder.jpg
 
-  #- name:
-  #  tagline: You?
-  #  avatar: placeholder.jpg
+team-alumni-title: Alumni
+alumni: 
+  - name: Jakob Lembacher (Medical student, Diplomarbeit, "Pose estimation in macaques")

@@ -62,5 +62,16 @@
 
     </div>
 
+    <header class="col-md-8 col-md-push-2 col-sm-12 section-header">
+      <hr class="normal">
+    </header>
+
+    <div class="col-md-8 col-md-push-2 col-sm-12 section-content">
+      <p><b>Alumni</b></p>
+      {% for member in site.alumni %}
+      <p>{{ member.name }}</p>
+      {% endfor %}
+    </div>
+
   </div>
 </section>

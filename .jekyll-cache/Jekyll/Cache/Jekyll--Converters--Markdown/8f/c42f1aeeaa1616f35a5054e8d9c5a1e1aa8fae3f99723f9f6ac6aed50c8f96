@@ -1,0 +1,68 @@
+I")<p>We have several PhD and Postdoc positions available. Come and join us!</p>
+
+<p>The <strong>Dynamics of Neural Systems Lab (gosztolai-lab.org)</strong> is seeking <strong>PhD and postdoc candidates</strong> who share our passion for conducting pioneering scientific work at the <strong>interface of neuroscience and machine learning (NeuroAI)</strong>. We are a young and dynamically growing group of multi-disciplinary researchers. We are located at the <strong>Institute of Artificial Intelligence of the Medical University of Vienna</strong>, the largest medical school in Europe. We are embedded in a network of AI researchers (https://aiml.meduniwien.ac.at/) and have links across Vienna, including the new AITHYRA Institute. The projects are funded by an <strong>ERC Starting Grant (2025-2029)</strong>. Help us build a dream interdisciplinary team to answer some of the most pressing data- and algorithm-driven challenges in machine learning and neuroscience with translational impact in neuroprosthetic interfaces.</p>
+
+<h2 id="what-we-offer">What we offer</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* Opportunity to actively shape a young and dynamically growing scientific community. * Engage with a world-class, international and multi-disciplinary team of machine learning scientists, neuroscientists and mathematicians. - Lead your independent research project, while working towards the unifying goal of discovering and transferring fundamental principles between ML and neuro. - Play with a top-notch H100 GPU computing cluster. - Collaborate with partners at MIT, EPFL, Imperial College London, and more. - Career mentoring to achieve your goals in academia or the research industry. - Scientific mentoring towards publishing in top journals and writing fellowship proposals. - Rich cultural life in Vienna, one of the nicest places to live. - Highly competitive salary paid 14 times yearly, and budget for attending conferences.
+</code></pre></div></div>
+
+<h2 id="potential-projects">Potential projects</h2>
+
+<h3 id="project-1-from-neurons-to-the-whole-brain-developing-a-unified-computational-model-of-single-neuron-activity-across-multiple-brain-regions">Project 1: From neurons to the whole brain: Developing a unified computational model of single-neuron activity across multiple brain regions</h3>
+
+<p>Thanks to groundbreaking single-cell recording technologies like Neuropixels and Ca+ imaging, we can now record neural activity from large populations of neurons. Yet, these tools are often constrained to local brain regions at superficial or deep layers. Our project seeks to leverage vast single-neuron recordings from the International Brain Laboratory, Allen Institute for Visual Coding, and other collaborators to tackle this limitation. These datasets offer an unparalleled opportunity to link activity at the single-neuron level to whole-brain states, potentially transforming how we understand brain pathologies and bridging the gap between clinical imaging (e.g., fMRI) and laboratory-based cellular recordings.</p>
+
+<h4 id="your-role">Your Role</h4>
+
+<p>You will lead the development of novel machine learning algorithms and advanced signal processing techniques to unify isolated neural recordings into a predictive model that spans the entire mammalian brain. You will be at the forefront of a new era in neuroscience, helping to quantitatively model single-neuron dynamics on a large scale—a feat previously limited to low-resolution techniques like fMRI. Beyond neuroscience, your work will contribute to advances in machine learning theory, especially in the development of large-scale models that capture complex neural dynamics during cognition.</p>
+
+<h3 id="project-2-advanced-ai-models-for-neuroprosthetics-understanding-the-neural-control-of-primate-locomotion-using-foundation-models">Project 2: Advanced AI models for Neuroprosthetics: Understanding the neural control of primate locomotion using foundation models</h3>
+
+<p>Recent advances in brain-machine interfaces have enabled remarkable achievements, from decoding speech in stroke patients to restoring walking in paralysis patients. Yet, neuroprosthetics for walking has relied on repurposing high-level motor cortex activity, designed for complex goal-directed actions, to drive simple, deliberate leg movements. To achieve fluid, natural locomotion, we need to go beyond this and develop a deeper understanding of how cortical neural signals translate into complex, dynamic movements.</p>
+
+<h4 id="your-role-1">Your Role</h4>
+
+<p>You will work on a one-of-a-kind vast dataset of primate locomotion, combining high-density neural recordings from three brain regions with detailed 3D motion tracking data. Your goal is to develop a generative foundation model that simulates primate movement, controlled directly by neural recordings. This embodied simulation will provide a powerful tool to study motor control and improve the design of neuroprosthetics. In the process, you will develop an in-depth expertise to work with neural and kinematic data using advanced signal processing techniques. You will also develop novel ML algorithms and controllers that allow the embedded simulation to generalise across environments. You will be able to significantly further our understanding of motor control and have the possibility to translate our findings into the medical domain.</p>
+
+<h2 id="direction-3-open-ended-project---machine-learning-theory-for-neuroscience">Direction 3: Open-ended project - Machine Learning Theory for Neuroscience</h2>
+
+<p>We are generally interested in recruiting talented candidates who want to push the frontiers of combining physics simulations and ML to model complex interacting systems such as the brain. We have specific expertise in geometric and topological deep learning applied to dynamical systems, which in previous publications we have demonstrated to have a significant impact on representation learning in large-scale neural recordings. We seek a candidate who is motivated to develop an independent theory-driven project that pushes the frontiers of neuro-inspired learning theories and simulations. We are particularly interested in merging geometric deep learning and dynamical systems approaches (e.g., state-space models) with probabilistic generative modelling. We believe that merging these disciplines would provide a novel viewpoint with great potential for the memory, scalability and across-task generalisability of current sequence models. We offer plenty of possibilities to apply these models to large-scale neural and behavioural data from our collaborators. If you have strong mathematical and coding skills and would like to explore how brain-inspired ideas can accelerate modern learning theories, this position is for you.</p>
+
+<h2 id="qualifications">Qualifications</h2>
+<p>We are looking for candidates who are highly collaborative and courageous to make discoveries not necessarily in their core training. In all roles, we are looking from a quantitative discipline and desire to learn about other disciplines. We are also looking for motivation to explore large-scale cutting-edge neural and behavioural recordings, primarily in macaques and rodents.</p>
+
+<h3 id="phd-position">PhD position</h3>
+<h4 id="minimum">Minimum</h4>
+<ul>
+  <li>Currently has, or is in the process of obtaining, a Master’s degree (or equivalent 4-year Bachelor) in a quantitative discipline (e.g., electrical engineering, computer science, computational neuroscience, physics or mathematics).</li>
+  <li>Fluency in a programming language, preferably Python. Other languages are a bonus.</li>
+</ul>
+
+<h4 id="preferred">Preferred</h4>
+<ul>
+  <li>An ability to articulate novel ideas and hypotheses.</li>
+  <li>Specific ideas for methods to test those hypotheses.</li>
+  <li>Experience in one (or more) of the following: signal processing theory, deep learning, generative machine learning, computational neuroscience</li>
+</ul>
+
+<h3 id="postdoctoral-position">Postdoctoral position</h3>
+<h4 id="minimum-1">Minimum</h4>
+<ul>
+  <li>In addition to the above, research-oriented implementation skills, including fluency in scientific Python and PyTorch, as evidenced by academic or professional research experience or contributions to open-source projects.</li>
+  <li>Experience one (or more) following: machine learning, deep learning, computer vision, probabilistic graphical models and/or natural language processing, non-linear optimisation, control theory</li>
+</ul>
+
+<h4 id="preferred-1">Preferred</h4>
+<ul>
+  <li>Proven track record of achieving significant results as demonstrated by fellowships as well as first-authored publications in peer-reviewed journals or leading machine learning conferences</li>
+  <li>Ability to articulate scientific hypotheses and propose methods to test them.</li>
+  <li>Excellent collaboration and presentation skills</li>
+</ul>
+
+<h2 id="about-the-institute">About the Institute</h2>
+<p>The successful candidate will be based at the Institute of Artificial Intelligence at the Medical University of Vienna, with ample opportunities to integrate into the AI research landscape locally (https://aiml.meduniwien.ac.at/) and internationally, including the European Lab for Learning and Intelligent Systems (ELLIS) and the new AITHYRA Institute. The Medical University of Vienna (https://www.meduniwien.ac.at/web/en/) is Europe’s largest medical school and one of the oldest in the world. Within the university’s data science department, the Institute of Artificial Intelligence pursues machine learning and artificial intelligence research with biomedical and clinical applications, including research groups focusing on AI for Biomedicine (Christoph Bock), Medical Image Computing (Hrvoje Bogunovic), Machine Learning for Signal Processing (Georg Dorffner), AI in Systems Biology (David Fischer), and Trustworthy AI (Matthias Samwald). Vienna is frequently ranked the world’s best city to live in. It is a United Nations city with a large English-speaking community.</p>
+
+<h2 id="how-to-apply">How to apply</h2>
+<p>Postdoc candidates should send their applications (CV and motivation letter) directly to Adam Gosztolai (adam.gosztolai@meduniwien.ac.at). PhD candidates can send their informal enquiries by e-mail, however, will be asked to apply for the Medical University of Vienna’s doctoral programme (see link https://oc.meduniwien.ac.at/en/open-phd-positions).</p>
+:ET
