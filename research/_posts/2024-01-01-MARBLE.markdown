@@ -1,13 +1,13 @@
 ---
 layout: page-no-sidebar
-title: "Interpretable statistical representations of neural dynamics and geometry"
+title: "MARBLE: Interpretable representations of neural dynamics using geometric deep learning"
 date: 2023-05-26 13:23
 categories: [dynamical systems, geometry, machine learning, computational neuroscience]
 authors: Gosztolai, A., Peach, R. L., Arnaudon, A., Barahona, M., Vandergheynst, P.
-journal: under review
-year: 2024
+journal: Nature Methods (to appear)
+year: 2025
 image: MARBLE.jpg
-paperurl: https://www.researchsquare.com/article/rs-2882348/v1
+paperurl: https://arxiv.org/html/2304.03376v3
 codeurl: https://github.com/agosztolai/MARBLE
 summary: The MARBLE method is a fully unsupervised representation learning approach to obtain interpretable latent representations of neural dynamics. More generally, it introduces a statistical learning paradigm for non-linear dynamical systems based on a decomposition of the dynamical attractor into local flow fields. MARBLE representations achieve state-of-the-art decoding accuracy in neural dynamics and allow comparing computations across biological and artificial neural networks.
 ---
