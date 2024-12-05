@@ -7,7 +7,9 @@ permalink: /team/adamgosztolai/
 ## Brief CV
 <br>
 
-**2024-present Independent Group Leader** -- AI Institute, Medical University of Vienna
+**2025- Tenure-track Assistant Professor** -- AI Institute, Medical University of Vienna
+
+**2024-2025 Independent Group Leader** -- AI Institute, Medical University of Vienna
 
 **2022-2024 Postdoctoral Fellow** -- École polytechnique fédérale de Lausanne (EPFL)
 
