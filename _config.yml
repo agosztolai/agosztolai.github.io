@@ -158,6 +158,12 @@ team:
     email: "mailto:albert.lopeziserrano@meduniwien.ac.at"
     scholar: "https://scholar.google.com/citations?user=5VlwDvsAAAAJ&hl=en"
 
+  - name: Dennis Duncan
+    tagline: PhD Student <br> BSc Physics <br> MSc Physics 
+    avatar: dennis.jpg
+    email: "mailto:dennis.duncan@meduniwien.ac.at"
+    scholar: "https://scholar.google.com/citations?user=F4ifo24AAAAJ&hl=en"
+
   - name: You?
     avatar: placeholder.jpg
 
