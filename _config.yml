@@ -148,18 +148,19 @@ team:
 
   # Team Member
   - name: Bálint Király
-    tagline: Postdoctoral researcher (starting 1/25) <br> BSc/MSc Physics <br> PhD in Neuroscience 
+    tagline: Postdoctoral researcher <br> BSc/MSc Physics <br> PhD in Neuroscience 
     avatar: balint.jpg
+    email: "mailto:balint.kiraly@meduniwien.ac.at"
     scholar: "https://www.researchgate.net/profile/Balint-Kiraly"
 
   - name: Albert López I Serrano
-    tagline: PhD Student <br> BSc Mathematics <br> MSc Mathematics 
+    tagline: PhD Student <br> BSc/MSc Mathematics
     avatar: albert.jpg
     email: "mailto:albert.lopeziserrano@meduniwien.ac.at"
     scholar: "https://scholar.google.com/citations?user=5VlwDvsAAAAJ&hl=en"
 
   - name: Dennis Duncan
-    tagline: PhD Student <br> BSc Physics <br> MSc Physics 
+    tagline: PhD Student <br> BSc/MSc Physics
     avatar: dennis.jpg
     email: "mailto:dennis.duncan@meduniwien.ac.at"
     scholar: "https://scholar.google.com/citations?user=F4ifo24AAAAJ&hl=en"
