@@ -165,8 +165,9 @@ team:
     email: "mailto:dennis.duncan@meduniwien.ac.at"
     scholar: "https://scholar.google.com/citations?user=F4ifo24AAAAJ&hl=en"
 
-  - name: You?
-    avatar: placeholder.jpg
+  - name: Jan Leszczyk
+    tagline: Master's Student <br> BSc Computer science
+    avatar: jan.jpg
 
 team-alumni-title: Alumni
 alumni: 
