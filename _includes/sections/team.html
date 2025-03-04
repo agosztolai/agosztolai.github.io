@@ -4,64 +4,54 @@
 
     <!-- Section Heading -->
     <div class="row text-center">
-
-      <!-- Section Header -->
       <header class="col-md-8 col-md-push-2 col-sm-12 section-header">
         <h2>{{ site.team-title }}</h2>
         <hr class="normal">
       </header>
 
-      <!-- Section Content -->
       <div class="col-md-8 col-md-push-2 col-sm-12 section-content">
         <p>{{ site.team-description }}</p>
       </div>
-
     </div>
 
     <!-- Team Members -->
-    <div class="row team-members-container">
-
+    <div class="team-members-container">
       {% for member in site.team %}
-
-      <!-- Member -->
-      <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
         <div class="team-member">
-          {% if member.linkname != null %}
           <div class="img-wrapper">
-            <a href="{{ site.baseurl }}/team/{{ member.linkname }}">
-              <img src="{{ site.baseurl }}/images/avatars/{{ member.avatar }}" alt="Avatar Team Member" />
-            </a>
+            {% if member.linkname != null %}
+              <a href="{{ site.baseurl }}/team/{{ member.linkname }}">
+                <img src="{{ site.baseurl }}/images/avatars/{{ member.avatar }}" alt="{{ member.name }}">
+              </a>
+            {% else %}
+              <img src="{{ site.baseurl }}/images/avatars/{{ member.avatar }}" alt="{{ member.name }}">
+            {% endif %}
           </div>
-          {% else %}
-            <img src="{{ site.baseurl }}/images/avatars/{{ member.avatar }}" alt="Avatar Team Member" />
-          {% endif %}
           <div class="team-member-content">
             <h3 class="name">{{ member.name }}</h3>
             <h4 class="tagline">{{ member.tagline }}</h4>
             <div class="social-icons">
               <ul class="icons">
-                {% if member.email != null %}
-                  <li><a href="{{ member.email }}" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+                {% if member.email %}
+                  <li><a href="mailto:{{ member.email }}"><i class="fa-solid fa-envelope"></i></a></li>
                 {% endif %}
-                {% if member.twitter != null %}
-                  <li><a href="{{ member.twitter }}" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                {% if member.twitter %}
+                  <li><a href="{{ member.twitter }}" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
                 {% endif %}
-                {% if member.scholar != null %}
+                {% if member.scholar %}
                   <li><a href="{{ member.scholar }}" target="_blank"><i class="fa-brands fa-google-scholar"></i></a></li>
                 {% endif %}
-                {% if member.github != null %}
+                {% if member.github %}
                   <li><a href="{{ member.github }}" target="_blank"><i class="fa-brands fa-github"></i></a></li>
                 {% endif %}
               </ul>
             </div>
           </div>
         </div>
-      </div>
-
       {% endfor %}
-
     </div>
 
+    <!-- Alumni Section -->
     <header class="col-md-8 col-md-push-2 col-sm-12 section-header">
       <hr class="normal">
     </header>
@@ -69,7 +59,7 @@
     <div class="col-md-8 col-md-push-2 col-sm-12 section-content">
       <p><b>Alumni</b></p>
       {% for member in site.alumni %}
-      <p>{{ member.name }}</p>
+        <p>{{ member.name }}</p>
       {% endfor %}
     </div>
 

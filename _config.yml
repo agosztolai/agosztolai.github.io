@@ -144,11 +144,11 @@ team:
     email: "mailto:adam.gosztolai@meduniwien.ac.at"
     twitter: "https://twitter.com/AGosztolai"
     scholar: "https://scholar.google.com/citations?user=fVGCjMsAAAAJ&hl=en"
-    github: "https://github.com/agosztolai"
+    github: "https://github.com/Dynamics-of-Neural-Systems-Lab"
 
   # Team Member
   - name: Bálint Király
-    tagline: Postdoctoral researcher <br> BSc/MSc Physics <br> PhD in Neuroscience 
+    tagline: Postdoctoral researcher <br> BSc/MSc Physics <br> PhD Neuroscience 
     avatar: balint.jpg
     email: "mailto:balint.kiraly@meduniwien.ac.at"
     scholar: "https://www.researchgate.net/profile/Balint-Kiraly"
@@ -172,6 +172,9 @@ team:
   - name: Robert Peach
     tagline: Visiting Researcher <br> PhD Appl. Mathematics
     avatar: robert.jpg
+    twitter: "https://twitter.com/RobertPeach15"
+    email: "mailto:robertlucienpeach@gmail.com"
+    scholar: "https://scholar.google.co.uk/citations?user=5vnU9VwAAAAJ&hl=en"
 
 team-alumni-title: Alumni
 alumni: 

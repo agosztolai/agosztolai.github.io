@@ -1,139 +1,103 @@
 /**
  *
- *  Team
-  Section Style
- *
- *  @package ohkimur_layout
+ *  Team Section Style
  *
  **/
 
-section.team-section {
+ .team-section {
+  padding: 80px 0;
 
-  // Team Members Container
   .team-members-container {
-    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; // Space between members
 
-    .col-md-3 {
-      @media (max-width: 600px) and (min-width: 430px) {
-        width: 70%;
-        margin-left: 15%;
-        margin-right: 15%;
-      }
-
-      @media (max-width: 430px) {
-        width: 100%;
-      }
-    }
-
-    // Member
     .team-member {
-      background: $white;
-      margin-bottom: 30px;
-      transition: all $transition-links $transition-links-type;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+      transition: all 0.3s ease-in-out;
+      flex: 1 1 calc(25% - 20px); // 4 per row on large screens
+      max-width: 300px;  // Ensure all cards have the same width
+      min-width: 250px;
+      min-height: 350px; // Ensure equal height
+
+      @media (max-width: 992px) {
+        flex: 1 1 calc(50% - 20px); // 2 per row on tablets
+      }
+
+      @media (max-width: 600px) {
+        flex: 1 1 100%; // 1 per row on mobile
+      }
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+      }
 
       .img-wrapper {
-        display: block;
-        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 10px auto;
         overflow: hidden;
-    
-        a {
-            display: block;
-            position: relative;
-            overflow: hidden;
-    
-            &:before,
-            &:after {
-                content: '';
-                display: block;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                width: 100%;
-                height: 100%;
-                background: transparentize($primary, 0.2);
-                z-index: 1;
-                opacity: 0;
-                transform: translate(-50%, -50%);
-                transition: all $transition-links $transition-links-type;
-            }
-    
-            &:after {
-                content: "\e623";
-                font-family: '7-stroke';
-                font-size: 4rem;
-                width: auto;
-                height: auto;
-                color: $white;
-                background: transparent;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-    
-            &:hover:before,
-            &:hover:after {
-                opacity: 1;
-            }
+        border-radius: 10px; // Make it square, change to 50% if you want circles
+        background: #f0f0f0; // Light grey background in case images fail to load
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; // Ensures square images without distortion
         }
       }
-    
 
       .team-member-content {
-        padding: 30px 30px 20px 30px;
+        padding: 20px;
 
         h3.name {
-          font-size: 1.25rem;
-          line-height: 1.4;
-          color: $secondary;
+          font-size: 1.2rem;
+          color: #333;
           text-transform: uppercase;
           margin-bottom: 5px;
         }
 
         h4.tagline {
-          font-size: 0.875rem;
+          font-size: 0.9rem;
+          color: #777;
         }
 
         .social-icons {
-          display: block;
-          width: 100%;
-          text-align: center;
-          font-size: 1.4rem;
-          margin-top: 30px;
+          display: flex;
+          justify-content: center;
+          margin-top: 10px;
 
           .icons {
-            display: inline-block;
+            display: flex;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
 
             li {
-              margin-bottom: 10px;
-
               a {
-                color: $global-text;
+                color: #555;
+                font-size: 1.4rem;
+                transition: color 0.3s ease;
 
-                &:hover,
-                &:active {
-                  color: $primary;
+                &:hover {
+                  color: #007bff;
                 }
               }
             }
           }
         }
       }
-
-      // Hover Mode
-      &:hover {
-        box-shadow: 0px 4px 9px 0px $shadow-color;
-
-        .img-wrapper {
-          &:before,
-          &:after {
-            opacity: 1;
-          }
-        }
-      }
-
     }
-
   }
-
 }

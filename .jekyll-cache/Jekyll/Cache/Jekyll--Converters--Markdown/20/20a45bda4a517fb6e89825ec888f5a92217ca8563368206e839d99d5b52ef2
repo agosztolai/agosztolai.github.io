@@ -1,0 +1,6 @@
+I"A<p>Adam Gosztolai (PI) is awarded the WWTF Vienna Research Group grant (1.6m EUR) to develop a foundation model of primate locomotion.</p>
+
+<p>Thanks to decades of progress in understanding the motor system, we have now an impressive ability to decode arm and hand movements from neural recordings. Most decoders work in a feed-forward or open-loop fashion, assuming that the behaviour is directly predictable from neural data. However, this means that for behaviours such as locomotion (or grasping) we still do not understand their neural control mechanisms. The difficulty is that such behaviours are dominated by sensory feedback and can only be understood as a closed-loop controlled with the environment.</p>
+
+<p>Using state-of-the-art recordings from the motor and somatosensory cortices of macaques, this project will develop a foundation model of locomotion. I expect that we will significantly advance our understanding of motor control and planning in contact-rich settings. We will collaborate with neuroprosthetics groups to translate these findings into clinical impact.</p>
+:ET
