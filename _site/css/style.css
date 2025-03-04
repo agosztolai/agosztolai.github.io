@@ -1326,35 +1326,35 @@ section.blog-section .view-posts hr.normal { margin: 20px auto; }
 section.blog-section .view-posts .button-cta { margin-bottom: 0; float: inherit !important; }
 
 /** Team Section Style */
-.team-section { padding: 80px 0; }
+section.team-section { padding: 80px 0; }
 
-.team-section .team-members-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+section.team-section .team-members-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
 
-.team-section .team-members-container .team-member { background: #ffffff; border-radius: 10px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); overflow: hidden; text-align: center; padding: 20px; transition: all 0.3s ease-in-out; flex: 1 1 calc(25% - 20px); max-width: 300px; min-width: 250px; min-height: 350px; }
+section.team-section .team-members-container .team-member { background: #ffffff; border-radius: 10px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); overflow: hidden; text-align: center; padding: 20px; transition: all 0.3s ease-in-out; flex: 1 1 calc(25% - 20px); max-width: 300px; min-width: 250px; min-height: 350px; }
 
-@media (max-width: 992px) { .team-section .team-members-container .team-member { flex: 1 1 calc(50% - 20px); } }
+@media (max-width: 992px) { section.team-section .team-members-container .team-member { flex: 1 1 calc(50% - 20px); } }
 
-@media (max-width: 600px) { .team-section .team-members-container .team-member { flex: 1 1 100%; } }
+@media (max-width: 600px) { section.team-section .team-members-container .team-member { flex: 1 1 100%; } }
 
-.team-section .team-members-container .team-member:hover { transform: translateY(-5px); box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); }
+section.team-section .team-members-container .team-member:hover { transform: translateY(-5px); box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); }
 
-.team-section .team-members-container .team-member .img-wrapper { display: flex; justify-content: center; align-items: center; width: 200px; height: 200px; margin: 0 auto 10px auto; overflow: hidden; border-radius: 10px; background: #f0f0f0; }
+section.team-section .team-members-container .team-member .img-wrapper { display: flex; justify-content: center; align-items: center; width: 200px; height: 200px; margin: 0 auto 10px auto; overflow: hidden; border-radius: 10px; background: #f0f0f0; }
 
-.team-section .team-members-container .team-member .img-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+section.team-section .team-members-container .team-member .img-wrapper img { width: 100%; height: 100%; object-fit: cover; }
 
-.team-section .team-members-container .team-member .team-member-content { padding: 20px; }
+section.team-section .team-members-container .team-member .team-member-content { padding: 20px; }
 
-.team-section .team-members-container .team-member .team-member-content h3.name { font-size: 1.2rem; color: #333; text-transform: uppercase; margin-bottom: 5px; }
+section.team-section .team-members-container .team-member .team-member-content h3.name { font-size: 1.2rem; color: #333; text-transform: uppercase; margin-bottom: 5px; }
 
-.team-section .team-members-container .team-member .team-member-content h4.tagline { font-size: 0.9rem; color: #777; }
+section.team-section .team-members-container .team-member .team-member-content h4.tagline { font-size: 0.9rem; color: #777; }
 
-.team-section .team-members-container .team-member .team-member-content .social-icons { display: flex; justify-content: center; margin-top: 10px; }
+section.team-section .team-members-container .team-member .team-member-content .social-icons { display: flex; justify-content: center; margin-top: 10px; }
 
-.team-section .team-members-container .team-member .team-member-content .social-icons .icons { display: flex; gap: 10px; list-style: none; padding: 0; margin: 0; }
+section.team-section .team-members-container .team-member .team-member-content .social-icons .icons { display: flex; gap: 10px; list-style: none; padding: 0; margin: 0; }
 
-.team-section .team-members-container .team-member .team-member-content .social-icons .icons li a { color: #555; font-size: 1.4rem; transition: color 0.3s ease; }
+section.team-section .team-members-container .team-member .team-member-content .social-icons .icons li a { color: #555; font-size: 1.4rem; transition: color 0.3s ease; }
 
-.team-section .team-members-container .team-member .team-member-content .social-icons .icons li a:hover { color: #007bff; }
+section.team-section .team-members-container .team-member .team-member-content .social-icons .icons li a:hover { color: #007bff; }
 
 /** Prices Section Style @package ohkimur_layout */
 section.prices-section .pricing-tables-container { margin-top: 80px; }
