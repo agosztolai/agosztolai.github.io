@@ -169,6 +169,10 @@ team:
     tagline: Master's Student <br> BSc Computer science
     avatar: jan.jpg
 
+  - name: Robert Peach
+    tagline: Visiting Researcher <br> PhD Appl. Mathematics
+    avatar: Robert
+
 team-alumni-title: Alumni
 alumni: 
   - name: Jakob Lembacher (Medical student, Diplomarbeit, "Pose estimation in macaques")
