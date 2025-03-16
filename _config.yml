@@ -176,6 +176,22 @@ team:
     email: "mailto:robertlucienpeach@gmail.com"
     scholar: "https://scholar.google.co.uk/citations?user=5vnU9VwAAAAJ&hl=en"
 
+  - name: Iolo Jones
+    tagline: Visiting Researcher <br> PhD Mathematics
+    avatar: iolo.jpg
+    twitter: "https://x.com/iolo_jones"
+    email: "mailto:iolo.j.jones@durham.ac.uk"
+    scholar: "https://scholar.google.com/citations?hl=en&user=SLWc9OsAAAAJ"
+    github: "https://github.com/Iolo-Jones"
+
+  - name: Jacob Bamberger
+    tagline: Visiting Researcher <br> PhD Computer Science
+    avatar: jacob.jpg
+    twitter: "https://x.com/jacobbamberger"
+    email: "mailto:jacob.bamberger@some.ox.ac.uk"
+    scholar: "https://scholar.google.com/citations?user=BzydMb8AAAAJ&hl=fr"
+    github: "https://github.com/jacobbamberger"
+
 team-alumni-title: Alumni
 alumni: 
   - name: Jakob Lembacher (Medical student, Diplomarbeit, "Pose estimation in macaques")
