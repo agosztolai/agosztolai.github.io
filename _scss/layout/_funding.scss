@@ -1,0 +1,11 @@
+.about-images{
+  display: flex;              /* Sit next to each other.            */
+  justify-content: center;    /* Whole bundle is centred.           */
+  gap: 2rem;                  /* Space between the two images.      */
+  flex-wrap: wrap;            /* Stack vertically on small screens. */
+}
+
+.about-images img{
+  max-width: 20%;            /* Never exceed column or viewport.   */
+  height: auto;               /* Preserve aspect ratio.             */
+}

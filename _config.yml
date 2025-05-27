@@ -87,13 +87,20 @@ future: true
 #####################################
 about-title: Our Mission
 about-description: |
-  Our brains and AI systems solve computational challenges in a distributed manner encoded in the collective activity of neural populations. Our research seeks to understand the dynamical processes underpinning neural computations to derive algorithmic principles shared by these fundamentally different systems. 
+  Our brains and AI systems solve computational challenges in a distributed manner, across neurons and 
+  across brain areas, encoded in the collective activity of neural populations. Our research seeks to 
+  understand the dynamical processes underpinning neural computations to derive algorithmic principles 
+  shared by these fundamentally different systems. We believe that understanding how the brain orchestrates
+  the dynamics of its neurons to perform complex computations will lead to a deeper understanding of 
+  intelligence and behaviour. 
   <br><br>
   We are motivated by two synergistic aims:
   <br><br>
-  1. Developing novel methods using machine learning, geometry and dynamical systems theory for discovering better models of how the brain works,
+  1. Developing novel methods using theoretical machine learning, geometry and dynamical systems theory 
+  for discovering better models of how the brain works.
   <br>
-  2. Reverse-engineering the dynamical systems that underpin cognitive processes to develop more advanced AI systems that benefit clinical applications such as brain-machine interfaces.
+  2. Reverse-engineering the dynamical systems that underpin cognitive processes to develop more advanced 
+  AI systems that benefit clinical applications such as brain-machine interfaces.
 
 #####################################
 ############  Research  #############
@@ -131,6 +138,16 @@ portfolio:
 #####################################
 team-title: Team
 team-description: 
+
+  We are a melting pot of researchers from diverse backgrounds, including physics, mathematics, computer science, 
+  and neuroscience. We are united by our drive for understanding the dynamics of neural systems and their 
+  implications for both biological and artificial intelligence.
+
+  We are always on the lookout for highly talented individuals with strong mathematical and programming skills 
+  and with a passion for understanding the brain and artificial intelligence. If this resonates with you,
+  we encourage you to reach out to us. To enquire about open positions, please contact Adam Gosztolai with 
+  your CV and a motivation letter describing why you would like to join our lab and what you can contribute 
+  to our research.
 
 #
 # Team Members
@@ -195,3 +212,6 @@ team:
 team-alumni-title: Alumni
 alumni: 
   - name: Jakob Lembacher (Medical student, Diplomarbeit, "Pose estimation in macaques")
+
+
+funding-title: Funding sources
