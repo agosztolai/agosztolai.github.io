@@ -180,13 +180,6 @@ team:
     tagline: Master's Student <br> BSc Computer science
     avatar: jan.jpg
 
-  - name: Robert Peach
-    tagline: Visiting Researcher <br> PhD Appl. Mathematics
-    avatar: robert.jpg
-    twitter: "https://twitter.com/RobertPeach15"
-    email: "mailto:robertlucienpeach@gmail.com"
-    scholar: "https://scholar.google.co.uk/citations?user=5vnU9VwAAAAJ&hl=en"
-
   - name: Albert López I Serrano
     tagline: Student intern <br> BSc/MSc Mathematics
     avatar: albert.jpg
@@ -212,6 +205,6 @@ team:
 team-alumni-title: Alumni
 alumni: 
   - name: Jakob Lembacher (Medical student, Diplomarbeit, "Pose estimation in macaques")
-
+  - name: Robert Peach (Visiting researcher, currently Principal Investigator at University of Würzburg)
 
 funding-title: Funding sources
