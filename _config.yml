@@ -188,12 +188,6 @@ team:
     tagline: Master's Student <br> BSc Computer science
     avatar: jan.jpg
 
-  - name: Albert López I Serrano
-    tagline: Student intern <br> BSc/MSc Mathematics
-    avatar: albert.jpg
-    email: "mailto:albert.lopeziserrano@meduniwien.ac.at"
-    scholar: "https://scholar.google.com/citations?user=5VlwDvsAAAAJ&hl=en"
-
   - name: Iolo Jones
     tagline: Visiting Researcher <br> PhD Mathematics
     avatar: iolo.jpg
@@ -210,9 +204,14 @@ team:
     scholar: "https://scholar.google.com/citations?user=BzydMb8AAAAJ&hl=fr"
     github: "https://github.com/jacobbamberger"
 
+  - name: Clara Grotehans
+    tagline: starting Nov 2025, MSc Computer Science
+    avatar: clara.jpg
+
 team-alumni-title: Alumni
 alumni: 
   - name: Jakob Lembacher (Medical student, Diplomarbeit, "Pose estimation in macaques")
   - name: Robert Peach (Visiting researcher, currently Principal Investigator at University of Würzburg)
+  - name: Albert López i Serrano (Research intern, "Koopman operator theory for data-driven dynamical systems")
 
 funding-title: Funding sources
