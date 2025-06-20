@@ -188,14 +188,6 @@ team:
     tagline: Master's Student <br> BSc Computer science
     avatar: jan.jpg
 
-  - name: Iolo Jones
-    tagline: Visiting Researcher <br> PhD Mathematics
-    avatar: iolo.jpg
-    twitter: "https://x.com/iolo_jones"
-    email: "mailto:iolo.j.jones@durham.ac.uk"
-    scholar: "https://scholar.google.com/citations?hl=en&user=SLWc9OsAAAAJ"
-    github: "https://github.com/Iolo-Jones"
-
   - name: Jacob Bamberger
     tagline: Visiting Researcher <br> PhD Computer Science
     avatar: jacob.jpg
@@ -213,5 +205,6 @@ alumni:
   - name: Jakob Lembacher (Medical student, Diplomarbeit, "Pose estimation in macaques")
   - name: Robert Peach (Visiting researcher, currently Principal Investigator at University of Würzburg)
   - name: Albert López i Serrano (Research intern, "Koopman operator theory for data-driven dynamical systems")
+  - name: Iolo Jones (Research intern, "Diffusion geometry for flow matching diffusion")
 
 funding-title: Funding sources
