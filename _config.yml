@@ -205,6 +205,6 @@ alumni:
   - name: Jakob Lembacher (Medical student, Diplomarbeit, "Pose estimation in macaques")
   - name: Robert Peach (Visiting researcher, currently Principal Investigator at University of Würzburg)
   - name: Albert López i Serrano (Research intern, "Koopman operator theory for data-driven dynamical systems")
-  - name: Iolo Jones (Research intern, "Diffusion geometry for flow matching diffusion")
+  - name: Iolo Jones (Research intern, "Diffusion geometry for generative flow matching models")
 
 funding-title: Funding sources
