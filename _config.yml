@@ -197,7 +197,11 @@ team:
     avatar: jiaming.jpg
 
   - name: Divyansh Gupta
+<<<<<<< HEAD
     tagline: starting Jan 2026, B.Tech/M.Tech Computer Science, PhD Systems Neuroscience
+=======
+    tagline: starting Jan 2026, MSc Computer Science, PhD Neuroscience
+>>>>>>> main
     avatar: divyansh.jpg
 
 team-alumni-title: Alumni
