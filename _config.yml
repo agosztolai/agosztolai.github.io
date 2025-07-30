@@ -173,7 +173,7 @@ team:
 
   # Team Member
   - name: Bálint Király
-    tagline: Postdoctoral researcher <br> BSc/MSc Physics <br> PhD Neuroscience 
+    tagline: Postdoctoral Researcher <br> BSc/MSc Physics <br> PhD Neuroscience 
     avatar: balint.jpg
     email: "mailto:balint.kiraly@meduniwien.ac.at"
     scholar: "https://www.researchgate.net/profile/Balint-Kiraly"
@@ -185,16 +185,20 @@ team:
     scholar: "https://scholar.google.com/citations?user=F4ifo24AAAAJ&hl=en"
 
   - name: Jan Leszczyk
-    tagline: Master's Student <br> BSc Computer science
+    tagline: Master's Student <br> BSc Computer Science
     avatar: jan.jpg
 
   - name: Clara Grotehans
-    tagline: starting Nov 2025, MSc Computer Science
+    tagline: starting Nov 2025, BSc/MSc Computer Science
     avatar: clara.jpg
 
   - name: Jiaming Qian
     tagline: starting Jan 2026, MSc Bioengineering
     avatar: jiaming.jpg
+
+  - name: Divyansh Gupta
+    tagline: starting Jan 2026, BTech/MTech Computer Science, PhD Systems Neuroscience
+    avatar: divyansh.jpg
 
 team-alumni-title: Alumni
 alumni: 
