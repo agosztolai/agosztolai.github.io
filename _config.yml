@@ -182,19 +182,24 @@ team:
     email: "mailto:balint.kiraly@meduniwien.ac.at"
     scholar: "https://www.researchgate.net/profile/Balint-Kiraly"
 
+  - name: Clara Grotehans
+    tagline: PhD Student <br> BSc/MSc Computer Science
+    avatar: clara.jpg
+    email: "mailto:clara.grotehans@meduniwien.ac.at"
+
   - name: Dennis Duncan
     tagline: PhD Student <br> BSc/MSc Physics
     avatar: dennis.jpg
     email: "mailto:dennis.duncan@meduniwien.ac.at"
     scholar: "https://scholar.google.com/citations?user=F4ifo24AAAAJ&hl=en"
 
+  - name: James Ferguson
+    tagline: Academic visitor <br> PhD Mathematics
+    avatar: james.jpg
+
   - name: Jan Leszczyk
     tagline: Master's Student <br> BSc Computer Science
     avatar: jan.jpg
-
-  - name: Clara Grotehans
-    tagline: starting Nov 2025, BSc/MSc Computer Science
-    avatar: clara.jpg
 
   - name: Jiaming Qian
     tagline: starting Jan 2026, MSc Bioengineering
