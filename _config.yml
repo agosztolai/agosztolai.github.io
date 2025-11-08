@@ -183,7 +183,7 @@ team:
     scholar: "https://www.researchgate.net/profile/Balint-Kiraly"
 
   - name: Clara Grotehans
-    tagline: PhD Student <br> BSc/MSc Computer Science
+    tagline: PhD Student <br> BSc/MSc Machine Learning
     avatar: clara.jpg
     email: "mailto:clara.grotehans@meduniwien.ac.at"
 
@@ -212,7 +212,7 @@ team:
 team-alumni-title: Alumni
 alumni: 
   - name: Jakob Lembacher (Medical student, Diplomarbeit, "Pose estimation in macaques")
-  - name: Robert Peach (Visiting researcher, currently Principal Investigator at University of Würzburg)
+  - name: Robert Peach (Postdoctoral researcher, currently Principal Investigator at University of Würzburg)
   - name: Albert López i Serrano (Research intern, "Koopman operator theory for data-driven dynamical systems")
   - name: Iolo Jones (Research intern, "Geometry regularised generative flow matching models")
   - name: Jacob Bamberger (Research intern, "Geometry regularised generative flow matching models")
