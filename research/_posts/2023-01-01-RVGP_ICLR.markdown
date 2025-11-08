@@ -2,7 +2,7 @@
 layout: page-no-sidebar
 title: "Implicit Gaussian process representation of vector fields over arbitrary latent manifolds"
 date: 2023-01-01 00:00
-categories: [machine learning, geometry]
+categories: [generative modelling, machine learning, geometry, computational neuroscience]
 authors: Peach, R. L., Vinao-Varl, M., Grossman, N., David, M., Mallas, E., Sharp, D., Malhotra, P. A., Vandergheynst, P., Gosztolai, A.
 journal: ICLR
 year: 2024

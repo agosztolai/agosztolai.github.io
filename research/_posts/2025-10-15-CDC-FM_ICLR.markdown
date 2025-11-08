@@ -2,7 +2,7 @@
 layout: page-no-sidebar
 title: "Carré du champ flow matching: better quality-generalisation tradeoff in generative models"
 date: 2025-10-15 13:23
-categories: [dynamical systems, geometry, machine learning, computational neuroscience]
+categories: [generative modelling, geometry, machine learning, computational neuroscience]
 authors:  Bamberger, J., Jones, J., Duncan, D., Bronstein, M., Vandergheynst, P., Gosztolai, A.
 journal: arXiv 
 year: 2025
