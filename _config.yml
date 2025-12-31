@@ -182,12 +182,12 @@ team:
     email: "mailto:clara.grotehans@meduniwien.ac.at"
 
   - name: Jiaming Qian
-    tagline: MSc Bioengineering
+    tagline: PhD Student <br> MSc Bioengineering
     avatar: jiaming.jpg
     email: "mailto:jiaming.qian@meduniwien.ac.at"
 
   - name: Divyansh Gupta
-    tagline: BTech/MTech Computer Science, PhD Systems Neuroscience
+    tagline: Postdoctoral Researcher <br> BTech/MTech Computer Science, PhD Systems Neuroscience
     avatar: divyansh.jpg
     email: "mailto:divyansh.gupta@meduniwien.ac.at"
     scholar: "https://scholar.google.com/citations?user=DUqVuX0AAAAJ&hl=en"
