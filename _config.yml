@@ -176,16 +176,21 @@ team:
     github: "https://github.com/Dynamics-of-Neural-Systems-Lab"
 
   # Team Member
-  - name: Bálint Király
-    tagline: Postdoctoral Researcher <br> BSc/MSc Physics <br> PhD Neuroscience 
-    avatar: balint.jpg
-    email: "mailto:balint.kiraly@meduniwien.ac.at"
-    scholar: "https://www.researchgate.net/profile/Balint-Kiraly"
-
   - name: Clara Grotehans
     tagline: PhD Student <br> BSc/MSc Machine Learning
     avatar: clara.jpg
     email: "mailto:clara.grotehans@meduniwien.ac.at"
+
+  - name: Jiaming Qian
+    tagline: MSc Bioengineering
+    avatar: jiaming.jpg
+    email: "mailto:jiaming.qian@meduniwien.ac.at"
+
+  - name: Divyansh Gupta
+    tagline: BTech/MTech Computer Science, PhD Systems Neuroscience
+    avatar: divyansh.jpg
+    email: "mailto:divyansh.gupta@meduniwien.ac.at"
+    scholar: "https://scholar.google.com/citations?user=DUqVuX0AAAAJ&hl=en"
 
   - name: Dennis Duncan
     tagline: PhD Student <br> BSc/MSc Physics
@@ -193,21 +198,9 @@ team:
     email: "mailto:dennis.duncan@meduniwien.ac.at"
     scholar: "https://scholar.google.com/citations?user=F4ifo24AAAAJ&hl=en"
 
-  - name: James Ferguson
-    tagline: Academic visitor <br> PhD Mathematics
-    avatar: james.jpeg
-
   - name: Jan Leszczyk
-    tagline: Master's Student <br> BSc Computer Science
+    tagline: Visiting researcher <br> MSc Computer Science
     avatar: jan.jpg
-
-  - name: Jiaming Qian
-    tagline: starting Jan 2026, MSc Bioengineering
-    avatar: jiaming.jpg
-
-  - name: Divyansh Gupta
-    tagline: starting Jan 2026, BTech/MTech Computer Science, PhD Systems Neuroscience
-    avatar: divyansh.jpg
 
 team-alumni-title: Alumni
 alumni: 
@@ -216,5 +209,5 @@ alumni:
   - name: Albert López i Serrano (Research intern, "Koopman operator theory for data-driven dynamical systems")
   - name: Iolo Jones (Research intern, "Geometry regularised generative flow matching models")
   - name: Jacob Bamberger (Research intern, "Geometry regularised generative flow matching models")
-
+  - name: Bálint Király (Postdoctoral researcher 'Combinatorial effect of neuromodulators in the mouse cortex')
 funding-title: Funding sources
