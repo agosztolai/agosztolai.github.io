@@ -198,9 +198,9 @@ team:
     email: "mailto:dennis.duncan@meduniwien.ac.at"
     scholar: "https://scholar.google.com/citations?user=F4ifo24AAAAJ&hl=en"
 
-  - name: Jan Leszczyk
-    tagline: Visiting researcher <br> MSc Computer Science
-    avatar: jan.jpg
+  - name: Leart Pilana
+    tagline: Master's Student <br> BSc Mathematics
+    avatar: leart.jpg
 
 team-alumni-title: Alumni
 alumni: 
@@ -209,5 +209,6 @@ alumni:
   - name: Albert López i Serrano (Research intern, "Koopman operator theory for data-driven dynamical systems")
   - name: Iolo Jones (Research intern, "Geometry regularised generative flow matching models")
   - name: Jacob Bamberger (Research intern, "Geometry regularised generative flow matching models")
-  - name: Bálint Király (Postdoctoral researcher 'Combinatorial effect of neuromodulators in the mouse cortex')
+  - name: Bálint Király (Postdoctoral researcher, "Combinatorial effect of neuromodulators in the mouse cortex")
+  - name: Jan Leszczyk (Master's student, "Deep reinforcement learning for macaque locomotion")
 funding-title: Funding sources
