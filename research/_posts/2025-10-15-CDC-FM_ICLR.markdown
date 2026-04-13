@@ -7,4 +7,5 @@ authors:  Bamberger, J., Jones, J., Duncan, D., Bronstein, M., Vandergheynst, P.
 journal: ICLR 
 year: 2026
 paperurl: https://openreview.net/forum?id=psmrKQ5lJe
+codeurl: https://github.com/Dynamics-of-Neural-Systems-Lab/cdc-fm
 ---
