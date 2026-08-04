@@ -1,0 +1,37 @@
+<!DOCTYPE html >
+<html lang="{{ site.lang }}">
+
+  {% include head.html %}
+
+  <body>
+
+    <!-- Page Loader -->
+    <div id="page-loader" class="page-loader"><span class="load-icon"></span></div>
+
+    {% include header-page.html %}
+
+    <!-- Page Section -->
+    <section class="site-section blog-section page-layout" id="start">
+      <div class="container">
+
+        <!-- Page Layout: full container width, no sidebar -->
+        <div class="row">
+
+          <div class="col-md-12">
+
+            {{ content }}
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    {% include footer.html %}
+
+    {% include scripts.html %}
+
+  </body>
+
+</html>
