@@ -78,3 +78,52 @@ section.contact-section {
   }
 
 }
+
+section.contact-info-section {
+
+  .contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    // Responsive Media
+    @media (max-width: 991px) {
+      display: block;
+    }
+  }
+
+  .contact-address {
+    address {
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 1.9;
+      color: $global-text;
+
+      strong {
+        color: $secondary;
+      }
+    }
+
+    .contact-email a {
+      color: $primary;
+
+      &:hover {
+        color: darken($primary, 15%);
+      }
+    }
+
+    // Responsive Media
+    @media (max-width: 991px) {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  }
+
+  .contact-map {
+    .embed-responsive {
+      border-radius: 4px;
+      box-shadow: 0 2px 20px $shadow-color;
+    }
+  }
+
+}

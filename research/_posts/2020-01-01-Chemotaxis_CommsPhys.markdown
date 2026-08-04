@@ -6,7 +6,8 @@ categories: [dynamical systems, collective behaviour]
 authors: Gosztolai, A., Barahona, M.
 journal: Communications Physics
 year: 2020
-paperurl: https://www.sciencedirect.com/science/article/pii/S0959438822000265
+thumb: chemotaxis.jpg
+paperurl: https://www.nature.com/articles/s42005-020-0312-8
 codeurl: https://github.com/barahona-research-group/Chemotaxis-In-Rugged-Landscapes
 ---
 

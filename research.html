@@ -3,24 +3,51 @@ layout: page
 title: Publications
 ---
 
-{% assign sorted_posts = site.posts | where: "categories", "research" | sort: "date" | reverse %}
+{% assign research_posts = site.posts | where: "categories", "research" %}
+{% assign by_date = research_posts | sort: "date" | reverse %}
+{% assign years = by_date | map: "year" | uniq | sort | reverse %}
 
-{% for post in sorted_posts %}
-    {% assign strippedContent = post.content | strip %}
-    <!-- Blog Article -->
-    <div class="post-full">
-      <article class="blog-article clearfix">
+<ul class="publication-list">
+{% for y in years %}
+  {% for post in by_date %}
+    {% if post.year == y %}
+      {% assign strippedContent = post.content | strip %}
+      {% assign venue = post.journal | strip %}
+      {% assign yearstring = post.year | append: '' %}
+      {% if post.thumb %}
+        {% assign thumbnail = '/images/research/thumbs/' | append: post.thumb %}
+      {% elsif post.image %}
+        {% assign thumbnail = '/images/research/' | append: post.image %}
+      {% else %}
+        {% assign thumbnail = nil %}
+      {% endif %}
 
-        <!-- Article Header -->
-        <header class="article-header">
-          <div >
-            <h4 class="title"><a href="{{ post.paperurl }}">{{ post.title }}</a></h4>
-            <h5 class="category">{{ post.authors}}</h5>
-            <h5 class="category" style="margin-bottom: 10px;"><em><a href="{{ post.paperurl }}">{{ post.journal }}</a></em> ({{ post.year}})</h5>
-            <h5 class="category" >{% if post.codeurl != null %}<a href="{{ post.codeurl }}">[code]</a>{% endif %}{% if post.videosummary != null %}<a href="{{ post.videosummary }}"> [video summary]</a>{% endif %}{% unless strippedContent == "" %}<a href="{{ post.url }}"> [blog post]</a>{% endunless %}</h5>
-          </div>
-        </header>
+    <li class="publication">
 
-      </article>
-    </div>
+      {% if thumbnail %}
+      <div class="publication-thumb">
+        <a href="{{ post.paperurl }}">
+          <img src="{{ thumbnail | relative_url }}" alt="Figure from {{ post.title | escape }}" loading="lazy">
+        </a>
+      </div>
+      {% endif %}
+
+      <div class="publication-body">
+        <h4 class="publication-title"><a href="{{ post.paperurl }}">{{ post.title }}</a></h4>
+        <p class="publication-authors">{{ post.authors | strip }}</p>
+        <p class="publication-venue">
+          <em>{{ venue }}</em>{% unless venue contains yearstring %} ({{ post.year }}){% endunless %}
+        </p>
+        <p class="publication-links">
+          <a href="{{ post.paperurl }}">[paper]</a>
+          {% if post.codeurl %}<a href="{{ post.codeurl }}">[code]</a>{% endif %}
+          {% if post.videosummary %}<a href="{{ post.videosummary }}">[video summary]</a>{% endif %}
+          {% unless strippedContent == "" %}<a href="{{ post.url | relative_url }}">[blog post]</a>{% endunless %}
+        </p>
+      </div>
+
+    </li>
+    {% endif %}
+  {% endfor %}
 {% endfor %}
+</ul>

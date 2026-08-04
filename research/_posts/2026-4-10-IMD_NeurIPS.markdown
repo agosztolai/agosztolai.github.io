@@ -6,5 +6,6 @@ categories: [generative modelling, geometry, machine learning, dynamical systems
 authors:  Kawasaki-Borruat, V., Grotehans, C., Vandergheynst, P., Gosztolai, A.
 journal: arXiv 
 year: 2026
+thumb: imd.jpg
 paperurl: https://arxiv.org/abs/2604.07213
 ---

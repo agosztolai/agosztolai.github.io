@@ -6,6 +6,7 @@ categories: [dynamical systems, collective behaviour]
 authors: Gosztolai, A., Carrillo, J. A., Barahona, M.
 journal: Frontiers in Physics
 year: 2019
+thumb: optimal-navigation.jpg
 paperurl: https://www.frontiersin.org/articles/10.3389/fphy.2018.00153/full?ref=https://githubhelp.com
 codeurl: https://github.com/agosztolai/optimal_navigation
 ---

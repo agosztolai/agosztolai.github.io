@@ -67,11 +67,10 @@ scholar: "https://scholar.google.com/citations?user=fVGCjMsAAAAJ&hl=en"
 ######   Widgets   ######
 #########################
 
-# Google Map JS api
-key-api: YOUR_GOOGLE_MAP_API_KEY
-map-text: Sera Google Map
-map-lat: 44.4267674
-map-lng: 26.102538399999958
+# Google Map embed (keyless, uses the maps search query below)
+map-text: Institute of Artificial Intelligence, Medical University of Vienna
+map-query: "Institute of Artificial Intelligence, Medical University of Vienna, Währinger Straße 25a, 1090 Vienna, Austria"
+map-zoom: 16
 
 # Enter your Mailchimp User ID and Campaign ID
 # @TODO: Add in a link for where to find these
@@ -151,8 +150,7 @@ team-description:
   
   <br><br>
 
-  While we are currently not advertising any open PhD or Postdoctoral positions, we are open to
-  exceptional candidates who are passionate about our research areas. If you believe you would be a great
+  We are always open to exceptional candidates who are passionate about our research areas. If you believe you would be a great
   fit for our team, please do not hesitate to reach out to Adam Gosztolai with your CV and a motivation letter 
   describing why you would like to join our lab and what you can contribute to our research. Postdoctoral
   candidates are encouraged to apply for competitive fellowships (e.g., EMBO, Marie Curie, etc.).
@@ -212,3 +210,14 @@ alumni:
   - name: Bálint Király (Postdoctoral researcher, "Combinatorial effect of neuromodulators in the mouse cortex")
   - name: Jan Leszczyk (Master's student, "Deep reinforcement learning for macaque locomotion")
 funding-title: Funding sources
+
+#####################################
+############# Contact ###############
+#####################################
+contact-title: Contact
+contact-institute: Institute of Artificial Intelligence
+contact-university: Medical University of Vienna
+contact-street: Währinger Straße 25a
+contact-city: 1090 Vienna
+contact-country: Austria
+contact-email: adam.gosztolai@meduniwien.ac.at

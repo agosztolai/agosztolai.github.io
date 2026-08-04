@@ -6,6 +6,7 @@ categories: [dynamical systems, geometry, machine learning, computational neuros
 authors: Gosztolai, A., Peach, R. L., Arnaudon, A., Barahona, M., Vandergheynst, P.
 journal: Nature Methods 
 year: 2025
+thumb: marble.jpg
 image: MARBLE.jpg
 paperurl: https://www.nature.com/articles/s41592-024-02582-2
 codeurl: https://github.com/Dynamics-of-Neural-Systems-Lab/MARBLE

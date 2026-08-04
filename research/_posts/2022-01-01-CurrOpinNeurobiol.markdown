@@ -6,5 +6,6 @@ categories: [dynamical systems, geometry]
 authors: Gosztolai, A., Ramdya, P.
 journal: Current Opinion in Neurobiology
 year: 2022
+thumb: ethology.jpg
 paperurl: https://www.sciencedirect.com/science/article/pii/S0959438822000265
 ---

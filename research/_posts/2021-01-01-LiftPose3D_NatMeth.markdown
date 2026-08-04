@@ -6,6 +6,7 @@ categories: [machine learning, computational neuroscience]
 authors: Gosztolai, A., Günel, S., Lobato-Ríos, V., Abrate, M. P., Morales, D., Rhodin, H., Fua, P., Ramdya, P.
 journal: Nature Methods
 year: 2021
+thumb: liftpose3d.jpg
 image: LiftPose3D.jpg
 paperurl: https://www.nature.com/articles/s41592-021-01226-z
 codeurl: https://pypi.org/project/liftpose/

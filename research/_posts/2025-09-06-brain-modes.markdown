@@ -6,5 +6,6 @@ categories: [geometry, dynamical systems, computational neuroscience]
 authors:  Vinao-Carl, M., Peach, R. L., Gosztolai, A., David, M. C. B., Mallas, E. J., Kurtin, D., Alania, K., Jaramillo, V., Violante, I. R., Sharp, D. J., Grossman, N.
 journal: bioRxiv 
 year: 2025
+thumb: brain-modes.jpg
 paperurl: https://www.biorxiv.org/content/10.1101/2025.09.05.674413v3.abstract
 ---

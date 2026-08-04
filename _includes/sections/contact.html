@@ -1,0 +1,50 @@
+<!-- Contact Section -->
+<section class="site-section section-focus contact-info-section" id="contact">
+  <div class="container">
+
+    <!-- Section Heading -->
+    <div class="row text-center">
+
+      <!-- Section Header -->
+      <header class="col-md-8 col-md-push-2 col-sm-12 section-header">
+        <h2>{{ site.contact-title }}</h2>
+        <hr class="normal">
+      </header>
+
+    </div>
+
+    <div class="row contact-details">
+
+      <!-- Address -->
+      <div class="col-md-4 col-sm-12 contact-address">
+        <address>
+          <strong>{{ site.contact-institute }}</strong><br>
+          {{ site.contact-university }}<br>
+          {{ site.contact-street }}<br>
+          {{ site.contact-city }}<br>
+          {{ site.contact-country }}
+        </address>
+
+        {% if site.contact-email %}
+        <p class="contact-email">
+          <a href="mailto:{{ site.contact-email }}">{{ site.contact-email }}</a>
+        </p>
+        {% endif %}
+      </div>
+
+      <!-- Google Map -->
+      <div class="col-md-8 col-sm-12 contact-map">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe
+            src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1s{{ site.map-query | url_encode }}!6i{{ site.map-zoom | default: 16 }}"
+            title="{{ site.map-text }}"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>

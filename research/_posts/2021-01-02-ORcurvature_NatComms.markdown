@@ -6,6 +6,7 @@ categories: [dynamical systems, geometry]
 authors: Gosztolai, A., Arnaudon, A.
 journal: Nature Communications
 year: 2021
+thumb: or-curvature.jpg
 image: ORcurvature.jpg
 paperurl: https://www.nature.com/articles/s41467-021-24884-1
 codeurl: https://github.com/agosztolai/geometric_clustering/tree/v1.2
